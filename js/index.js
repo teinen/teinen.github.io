@@ -1,13 +1,13 @@
 ityped.init(`#ityped`, {
   // required - for now, only accepting texts
-  // strings: ["print('Hello, World!')", "This is teinen's portfolio page."],
-  strings: ["Now at work..."],
+  strings: ["print('Hello, World!')"],
+  // strings: ["Now at work..."],
   //optional
-  typeSpeed: 60,
+  typeSpeed: 90,
   //optional
   backSpeed: 50,
   //optional
-  startDelay: 900,
+  startDelay: 1200,
   //optional
   backDelay: 500,
   //optional

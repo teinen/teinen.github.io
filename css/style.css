@@ -1,4 +1,4 @@
-/* --- Basics --- */
+/* --- HEADRER SECTION --- */
 .title {
   font-size: 7.0rem;
 }
@@ -8,19 +8,26 @@
   font-size: 4.5rem;
 }
 
-.center {
-  text-align: center;
+/* --- LAYOUT --- */
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
-/* --- Layout --- */
-
 /* --- Flexbox --- */
-.container {
+.flex-box {
   width: 100vw;
   height: 100vh;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.bg-info {
+  background-size: cover;
+  background-position: center;
+  background-color: gold;
 }
 
 .flex-column {
