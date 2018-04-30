@@ -1,23 +1,29 @@
 /* --- HEADER PROPS --- */
 h1 {
-  font-size: 9.0rem !important; }
+  font-size: 9.0rem !important;
+}
 
 h2 {
-  font-size: 7.0rem !important; }
-  h2 ::before {
-    content: "-"; }
-  h2 ::after {
-    content: "-"; }
+  font-size: 7.0rem !important;
+  ::before {
+    content: "-"
+  }
+  ::after {
+    content: "-"
+  }
+}
 
 /* --- HEADRER SECTION --- */
 .sub-title {
   color: gray;
-  font-size: 4.5rem; }
+  font-size: 4.5rem;
+}
 
 /* --- LAYOUT --- */
 body {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 /* --- Flexbox --- */
 .flex-box {
@@ -26,18 +32,23 @@ body {
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .bg-info {
   background-size: cover;
   background-position: center;
-  background-color: gold; }
+  background-color: gold;
+}
 
 .flex-column {
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .flex-row {
-  flex-direction: row; }
+  flex-direction: row;
+}
+
 
 /* --- Blinking cursor --- */
 .ityped-cursor {
@@ -47,16 +58,20 @@ body {
   -webkit-animation: blink 0.6s infinite;
   -moz-animation: blink 0.6s infinite;
   animation: blink 0.6s infinite;
-  animation-direction: alternate; }
-
+  animation-direction: alternate;
+}
 @keyframes blink {
-  100% {
-    opacity: 0; } }
-
+	100% {
+		opacity: 0;
+	}
+}
 @-webkit-keyframes blink {
-  100% {
-    opacity: 0; } }
-
+	100% {
+		opacity: 0;
+	}
+}
 @-moz-keyframes blink {
-  100% {
-    opacity: 0; } }
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,9 +1,9 @@
 ityped.init(`#ityped`, {
   // required - for now, only accepting texts
-  strings: ["print('Hello, World!')"],
+  strings: ["print('Welcome to my page!')"],
   // strings: ["Now at work..."],
   //optional
-  typeSpeed: 90,
+  typeSpeed: 80,
   //optional
   backSpeed: 50,
   //optional
@@ -15,7 +15,7 @@ ityped.init(`#ityped`, {
   //optional
   showCursor: true,
   //optional
-  cursorChar: "_",
+  cursorChar: "|",
   //optional
   disableBackTyping: true,
   // optional callback called once the last string has been typed
