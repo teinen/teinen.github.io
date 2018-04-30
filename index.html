@@ -15,19 +15,22 @@
   <link rel="stylesheet" href="./css/skeleton.css">
   <!-- JAVASCRIPT -->
   <script type="text/javascript" src="https://unpkg.com/ityped@1.0.1"></script>
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </head>
 <body>
-  <div>
-    <header>
-      <div class="wrap">
-        <span style="display: block;">
-          <h1 class="title animated bounceInDown"><strong>SHOW</strong>.me</h1>
-        </span>
-        <span id="ityped" class="sub-title"></span>
-        <span class="ityped-cursor"></span>
+  <section id="header">
+    <div class="container flex-column">
+      <h1 class="title animated fadeInUp item">
+        <strong>SHOW</strong>.me
+      </h1>
+      <div class="flex-column">
+        <span id="ityped" class="sub-title item"></span>
       </div>
-    </header>
-  </div>
+    </div>
+  </section>
 </body>
 <script type="text/javascript" src="./js/index.js"></script>
 </html>
