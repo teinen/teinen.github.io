@@ -13,6 +13,9 @@
     href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/skeleton.css">
+  <!-- Font-awesome -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- JAVASCRIPT -->
   <script type="text/javascript" src="https://unpkg.com/ityped@1.0.1"></script>
   <script src="./js/wow.min.js"></script>
@@ -23,11 +26,14 @@
 <body>
   <!-- MAIN SECTION -->
   <section id="header">
-    <div class="flex-box flex-column">
-      <h1 class="animated fadeInDown">
-        <strong>SHOW</strong>.me
-      </h1>
-      <div class="flex-column">
+    <div class="box column">
+      <div class="row">
+        <svg>
+          <text x="0" y="100" class="svg-main-title-1">SHOW</text>
+        </svg>
+        <span style="font-size: 80px; margin: 0; padding: 0;">.me</span>
+      </div>
+      <div>
         <span id="ityped" class="sub-title"></span>
       </div>
     </div>
@@ -35,8 +41,8 @@
 
   <!-- ABOUT SECTION -->
   <section id="about">
-    <div class="flex-box flex-column bg-info">
-      <h2 class="wow animated fadeInDown">
+    <div class="box flex-column bg-info">
+      <h2 class="wow animated fadeInDown" data-wow-duration="2s">
         ABOUT
       </h1>
     </div>
@@ -44,8 +50,8 @@
 
   <!-- SKILL SECTION -->
   <section id="skill">
-    <div class="flex-box flex-column">
-      <h2 class="wow animated fadeInDown">
+    <div class="box flex-column">
+      <h2 class="wow animated fadeInDown" data-wow-duration="2s">
         SKILL
       </h1>
     </div>

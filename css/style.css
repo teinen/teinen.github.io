@@ -1,7 +1,4 @@
 /* --- HEADER PROPS --- */
-h1 {
-  font-size: 9.0rem !important; }
-
 h2 {
   font-size: 7.0rem !important; }
   h2 ::before {
@@ -19,8 +16,13 @@ body {
   margin: 0px;
   padding: 0px; }
 
+.bg-info {
+  background-size: cover;
+  background-position: center;
+  background-color: gold; }
+
 /* --- Flexbox --- */
-.flex-box {
+.box {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -28,16 +30,53 @@ body {
   align-items: center;
   justify-content: center; }
 
-.bg-info {
-  background-size: cover;
-  background-position: center;
-  background-color: gold; }
-
-.flex-column {
+.column {
   flex-direction: column; }
 
-.flex-row {
-  flex-direction: row; }
+.row {
+  flex-direction: row;
+  align-items: flex-end; }
+
+/* --- svg --- */
+svg {
+  width: 500px;
+  height: 200px; }
+
+.svg-main-title-1 {
+  font-size: 150px;
+  font-weight: 600;
+  fill: none;
+  stroke: none;
+  stroke-dasharray: 480% 480%;
+  stroke-width: 1px;
+  -webkit-animation: stroke-offset 5s linear 2s forwards;
+  animation: stroke-offset 5s linear 2s forwards; }
+
+@-webkit-keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 480%;
+    stroke: black;
+    fill: transparent; }
+  50% {
+    fill: transparent;
+    stroke: black; }
+  100% {
+    stroke-dashoffset: 0%;
+    stroke: black;
+    fill: black; } }
+
+@keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 480%;
+    stroke: black;
+    fill: transparent; }
+  50% {
+    fill: transparent;
+    stroke: black; }
+  100% {
+    stroke-dashoffset: 0%;
+    stroke: black;
+    fill: black; } }
 
 /* --- Blinking cursor --- */
 .ityped-cursor {
