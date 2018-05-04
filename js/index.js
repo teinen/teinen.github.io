@@ -1,6 +1,6 @@
 ityped.init(`#ityped`, {
   // required - for now, only accepting texts
-  strings: ["print('Welcome to my page!')"],
+  strings: ["print('Welcome to my page.')"],
   // strings: ["Now at work..."],
   //optional
   typeSpeed: 80,
