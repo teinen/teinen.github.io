@@ -1,7 +1,8 @@
 /* --- HEADER PROPS --- */
 h2 {
   font-size: 9.0rem !important;
-  font-weight: 600 !important; }
+  font-weight: 600 !important;
+  margin-top: 20px !important; }
 
 /* --- HEADRER SECTION --- */
 .ityped {
@@ -38,8 +39,7 @@ body {
   .flex-box.center {
     justify-content: center; }
   .flex-box.top {
-    justify-content: start;
-    padding-top: 50px; }
+    justify-content: start; }
   .flex-box.flex-column {
     flex-direction: column; }
   .flex-box .flex-row {
