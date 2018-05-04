@@ -1,19 +1,10 @@
 /* --- HEADER PROPS --- */
 h2 {
   font-size: 7.0rem !important;
-  &::before {
-    content: "-"
-  }
-  &::after {
-    content: "-"
-  }
+  font-weight: 600 !important;
 }
 
 /* --- HEADRER SECTION --- */
-.sub-title::after {
-  content: "hoge";
-}
-
 .ityped {
   color: gray;
   font-size: 4.5rem;
@@ -23,6 +14,10 @@ h2 {
 body {
   margin: 0px;
   padding: 0px;
+}
+
+.sec-title {
+  margin-left: 5px;
 }
 
 .bg-info {
@@ -65,8 +60,8 @@ svg {
   stroke: none;
   stroke-dasharray: 400% 400%;
   stroke-width: 1.5px;
-  -webkit-animation: stroke-offset-1 5s linear 2s forwards;
-          animation: stroke-offset-1 5s linear 2s forwards;
+  -webkit-animation: stroke-offset-1 5s linear 1s forwards;
+          animation: stroke-offset-1 5s linear 1s forwards;
 }
 
 .svg-main-title-2 {
@@ -76,8 +71,8 @@ svg {
   stroke: none;
   stroke-dasharray: 450% 450%;
   stroke-width: 1.5px;
-  -webkit-animation: stroke-offset-2 5s linear 2s forwards;
-          animation: stroke-offset-2 5s linear 2s forwards;
+  -webkit-animation: stroke-offset-2 5s linear 1s forwards;
+          animation: stroke-offset-2 5s linear 1s forwards;
 }
 
 @-webkit-keyframes stroke-offset-1 {

@@ -6,8 +6,8 @@ ityped.init(`#ityped`, {
   typeSpeed: 80,
   //optional
   backSpeed: 50,
-  // start after 6 sec
-  startDelay: 6000,
+  // start after 5 sec
+  startDelay: 5000,
   //optional
   backDelay: 500,
   //optional
