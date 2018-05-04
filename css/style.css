@@ -1,13 +1,16 @@
 /* --- HEADER PROPS --- */
 h2 {
   font-size: 7.0rem !important; }
-  h2 ::before {
+  h2::before {
     content: "-"; }
-  h2 ::after {
+  h2::after {
     content: "-"; }
 
 /* --- HEADRER SECTION --- */
-.sub-title {
+.sub-title::after {
+  content: "hoge"; }
+
+.ityped {
   color: gray;
   font-size: 4.5rem; }
 
@@ -22,39 +25,74 @@ body {
   background-color: gold; }
 
 /* --- Flexbox --- */
-.box {
+.flex-box {
   width: 100vw;
   height: 100vh;
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  /* column */
+  /* row */ }
+  .flex-box.flex-column {
+    flex-direction: column; }
+  .flex-box .flex-row {
+    flex-direction: row; }
 
-.column {
-  flex-direction: column; }
-
-.row {
-  flex-direction: row;
-  align-items: flex-end; }
-
-/* --- svg --- */
+/* --- SVG --- */
 svg {
-  width: 500px;
+  width: 400px;
   height: 200px; }
 
 .svg-main-title-1 {
-  font-size: 150px;
+  font-size: 8rem;
   font-weight: 600;
   fill: none;
   stroke: none;
-  stroke-dasharray: 480% 480%;
-  stroke-width: 1px;
-  -webkit-animation: stroke-offset 5s linear 2s forwards;
-  animation: stroke-offset 5s linear 2s forwards; }
+  stroke-dasharray: 400% 400%;
+  stroke-width: 1.5px;
+  -webkit-animation: stroke-offset-1 5s linear 2s forwards;
+  animation: stroke-offset-1 5s linear 2s forwards; }
 
-@-webkit-keyframes stroke-offset {
+.svg-main-title-2 {
+  font-size: 12rem;
+  font-weight: 600;
+  fill: none;
+  stroke: none;
+  stroke-dasharray: 450% 450%;
+  stroke-width: 1.5px;
+  -webkit-animation: stroke-offset-2 5s linear 2s forwards;
+  animation: stroke-offset-2 5s linear 2s forwards; }
+
+@-webkit-keyframes stroke-offset-1 {
   0% {
-    stroke-dashoffset: 480%;
+    stroke-dashoffset: 400%;
+    stroke: black;
+    fill: transparent; }
+  50% {
+    fill: transparent;
+    stroke: black; }
+  100% {
+    stroke-dashoffset: 0%;
+    stroke: black;
+    fill: none; } }
+
+@keyframes stroke-offset-1 {
+  0% {
+    stroke-dashoffset: 400%;
+    stroke: black;
+    fill: transparent; }
+  50% {
+    fill: transparent;
+    stroke: black; }
+  100% {
+    stroke-dashoffset: 0%;
+    stroke: black;
+    fill: none; } }
+
+@-webkit-keyframes stroke-offset-2 {
+  0% {
+    stroke-dashoffset: 450%;
     stroke: black;
     fill: transparent; }
   50% {
@@ -65,9 +103,9 @@ svg {
     stroke: black;
     fill: black; } }
 
-@keyframes stroke-offset {
+@keyframes stroke-offset-2 {
   0% {
-    stroke-dashoffset: 480%;
+    stroke-dashoffset: 450%;
     stroke: black;
     fill: transparent; }
   50% {
