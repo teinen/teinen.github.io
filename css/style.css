@@ -1,3 +1,4 @@
+/* --- VARIABLES --- */
 /* --- HEADER PROPS --- */
 h2 {
   font-size: 9.0rem !important;
@@ -18,19 +19,34 @@ body {
   margin-left: 5px;
   /* About sec */ }
   .sec-title.white {
-    color: white; }
+    color: #fff; }
 
 .sec-contents {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   text-align: center;
   /* title */ }
   .sec-contents div {
     margin-bottom: 80px; }
   .sec-contents p.title {
     font-size: 5.0rem;
-    font-weight: bold; }
-  .sec-contents p::before, .sec-contents p::after {
-    content: '-'; }
+    font-weight: bold;
+    position: relative;
+    display: inline-block; }
+  .sec-contents p::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: -0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s; }
+  .sec-contents p:hover::after {
+    transform: scale(1, 1); }
+  .sec-contents span {
+    display: block; }
 
 .bg-black {
   background-size: cover;
