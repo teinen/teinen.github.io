@@ -21,18 +21,18 @@ body {
   .sec-title.white {
     color: #fff; }
 
-.sec-contents {
+.sec-contents-about, .sec-contents-skill {
   font-size: 3.0rem;
   text-align: center;
   /* title */ }
-  .sec-contents div {
+  .sec-contents-about div, .sec-contents-skill div {
     margin-bottom: 80px; }
-  .sec-contents p.title {
+  .sec-contents-about p.title, .sec-contents-skill p.title {
     font-size: 5.0rem;
     font-weight: bold;
     position: relative;
     display: inline-block; }
-  .sec-contents p::after {
+  .sec-contents-about p::after, .sec-contents-skill p::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -43,15 +43,21 @@ body {
     transform: scale(0, 1);
     transform-origin: center top;
     transition: transform .3s; }
-  .sec-contents p:hover::after {
+  .sec-contents-about p:hover::after, .sec-contents-skill p:hover::after {
     transform: scale(1, 1); }
-  .sec-contents span {
+  .sec-contents-about span, .sec-contents-skill span {
     display: block; }
+
+.sec-contents-skill p::after {
+  background: #000; }
+
+.sec-contents-skill span {
+  margin-bottom: 10px; }
 
 .bg-black {
   background-size: cover;
   background-position: center;
-  background-color: black; }
+  background-color: #000; }
 
 /* --- Flexbox --- */
 .flex-box {

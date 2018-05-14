@@ -1,5 +1,6 @@
 /* --- VARIABLES --- */
 $white: #fff;
+$black: #000;
 
 /* --- HEADER PROPS --- */
 h2 {
@@ -29,7 +30,7 @@ body {
   }
 }
 
-.sec-contents {
+.sec-contents-about {
   font-size: 3.0rem;
   text-align: center;
 
@@ -67,10 +68,22 @@ body {
   }
 }
 
+.sec-contents-skill {
+  @extend .sec-contents-about;
+  p {
+    &::after {
+      background: $black;
+    }
+  }
+  span {
+    margin-bottom: 10px;
+  }
+}
+
 .bg-black {
   background-size: cover;
   background-position: center;
-  background-color: black;
+  background-color: $black;
 }
 
 /* --- Flexbox --- */
