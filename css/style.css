@@ -17,8 +17,20 @@ body {
 .sec-title {
   margin-left: 5px;
   /* About sec */ }
-  .sec-title.about {
+  .sec-title.white {
     color: white; }
+
+.sec-contents {
+  font-size: 4.0rem;
+  text-align: center;
+  /* title */ }
+  .sec-contents div {
+    margin-bottom: 80px; }
+  .sec-contents p.title {
+    font-size: 5.0rem;
+    font-weight: bold; }
+  .sec-contents p::before, .sec-contents p::after {
+    content: '-'; }
 
 .bg-black {
   background-size: cover;

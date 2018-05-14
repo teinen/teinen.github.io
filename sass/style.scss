@@ -26,6 +26,26 @@ body {
   }
 }
 
+.sec-contents {
+  font-size: 4.0rem;
+  text-align: center;
+
+  div {
+    margin-bottom: 80px;
+  }
+
+  /* title */
+  p {
+    &.title {
+      font-size: 5.0rem;
+      font-weight: bold;
+    }
+    &::before, &::after {
+      content: '-';
+    }
+  }
+}
+
 .bg-black {
   background-size: cover;
   background-position: center;
