@@ -52,7 +52,8 @@ body {
   background: #000; }
 
 .sec-contents-skill span {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 6.5rem; }
 
 .bg-black {
   background-size: cover;
