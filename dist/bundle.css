@@ -3946,7 +3946,7 @@ body {
     display: block;
     width: 50px;
     height: 5px;
-    background: gray;
+    background: #424242;
     position: absolute;
     left: 5px;
     transition: all 0.2s;
@@ -3976,7 +3976,7 @@ body {
   margin-left: 5px;
   /* About sec */ }
   .sec-title.white {
-    color: #fff; }
+    color: #ffffff; }
 
 .sec-contents-about, .sec-contents-skill {
   font-size: 3.0rem;
@@ -3996,7 +3996,7 @@ body {
     left: -0;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #ffffff;
     transform: scale(0, 1);
     transform-origin: center top;
     transition: transform .3s; }
@@ -4006,7 +4006,7 @@ body {
     display: block; }
 
 .sec-contents-skill p::after {
-  background: #000; }
+  background: #000000; }
 
 .sec-contents-skill span {
   margin-bottom: 10px;
@@ -4015,7 +4015,7 @@ body {
 .bg-black {
   background-size: cover;
   background-position: center;
-  background-color: #000; }
+  background-color: #000000; }
 
 /* --- Flexbox --- */
 .flex-box {
