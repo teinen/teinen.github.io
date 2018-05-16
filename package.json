@@ -1,7 +1,7 @@
 {
-  "name": "show.me",
+  "name": "letmeshow",
   "version": "1.0.0",
-  "description": "teinen's portfolio",
+  "description": "teinen's portfolio page",
   "main": "index.js",
   "repository": "https://teinen@github.com/teinen/teinen.github.io.git",
   "author": "諦念 <teinen.github@gmail.com>",
