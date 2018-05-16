@@ -1,3 +1,15 @@
+// menu click action
+function toggleMenu() {
+  var element = document.getElementById("menu-button");
+
+  console.log(element.className);
+
+  element.classList.toggle("active");
+
+  console.log(element.className);
+}
+
+// iTyped configuration
 ityped.init(`#ityped`, {
   // required - for now, only accepting texts
   strings: ["print('Welcome to my page.')"],

@@ -3930,7 +3930,7 @@ body {
   margin: 0px;
   padding: 0px; }
 
-.menu-button {
+#menu-button {
   display: block;
   width: 60px;
   height: 50px;
@@ -3938,11 +3938,11 @@ body {
   top: 20px;
   right: 20px;
   z-index: 3; }
-  .menu-button:hover span:first-child {
+  #menu-button:hover span:first-child {
     transform: translateY(-4px); }
-  .menu-button:hover span:last-child {
+  #menu-button:hover span:last-child {
     transform: translateY(4px); }
-  .menu-button span {
+  #menu-button span {
     display: block;
     width: 50px;
     height: 5px;
@@ -3952,13 +3952,25 @@ body {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s; }
-    .menu-button span:first-child {
+    #menu-button span:first-child {
       top: 10px; }
-    .menu-button span:nth-child(2) {
+    #menu-button span:nth-child(2) {
       margin-top: -2px;
       top: 50%; }
-    .menu-button span:last-child {
+    #menu-button span:last-child {
       bottom: 10px; }
+  #menu-button.active span:first-child {
+    -webkit-transform: translateY(12.5px) rotate(225deg);
+    -moz-transform: translateY(12.5px) rotate(225deg);
+    -ms-transform: translateY(12.5px) rotate(225deg);
+    transform: translateY(12.5px) rotate(225deg); }
+  #menu-button.active span:nth-child(2) {
+    opacity: 0; }
+  #menu-button.active span:last-child {
+    -webkit-transform: translateY(-12.5px) rotate(135deg);
+    -moz-transform: translateY(-12.5px) rotate(135deg);
+    -ms-transform: translateY(-12.5px) rotate(135deg);
+    transform: translateY(-12.5px) rotate(135deg); }
 
 .sec-title {
   margin-left: 5px;
