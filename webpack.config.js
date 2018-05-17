@@ -20,8 +20,12 @@ module.exports = [
           })
         },
         {
-            test: /\.(woff|eot|ttf|svg)$/,
-            loader: "file-loader?name=./fonts/[name].[ext]"
+          test: /\.(png|jpeg|jpg)$/,
+          loader: "file-loader?name=./images/[name].[ext]"
+        },
+        {
+          test: /\.(woff|eot|ttf|svg)$/,
+          loader: "file-loader?name=./fonts/[name].[ext]"
         }
       ]
     },

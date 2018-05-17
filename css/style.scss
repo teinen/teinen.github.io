@@ -1,30 +1,32 @@
-/* --- IMPORT --- */
+/* --- Import --- */
 @import "./animate.css";
 @import "./skeleton.css";
 @import "./devicons.min.css";
 
-/* --- VARIABLES --- */
+/* --- Variables --- */
 $white:     #ffffff;
 $black:     #000000;
 $dark-gray: #424242;
 
-/* --- HEADER PROPS --- */
+/* --- Common Properties --- */
 h2 {
   font-size: 9.0rem !important;
   font-weight: 600 !important;
   margin-top: 20px !important;
 }
 
-/* --- HEADRER SECTION --- */
-.ityped {
-  color: gray;
-  font-size: 4.5rem;
-}
-
-/* --- LAYOUT --- */
-body {
-  margin: 0px;
-  padding: 0px;
+/* --- Header --- */
+.top-bar {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+  opacity: 0.8;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
 }
 
 #menu-button {
@@ -32,8 +34,8 @@ body {
   width: 60px;
   height: 50px;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   z-index: 3;
 
   &:hover {
@@ -50,8 +52,8 @@ body {
   span {
     display: block;
     width: 50px;
-    height: 5px;
-    background: $dark-gray;
+    height: 3px;
+    background: $white;
     position: absolute;
     left: 5px;
     transition: all 0.2s;
@@ -72,22 +74,50 @@ body {
   &.active {
     span {
       &:first-child {
-        -webkit-transform: translateY(12.5px) rotate(225deg);
-        -moz-transform: translateY(12.5px) rotate(225deg);
-        -ms-transform: translateY(12.5px) rotate(225deg);
-        transform: translateY(12.5px) rotate(225deg);
+        -webkit-transform: translateY(13.5px) rotate(225deg);
+        -moz-transform: translateY(13.5px) rotate(225deg);
+        -ms-transform: translateY(13.5px) rotate(225deg);
+        transform: translateY(13.5px) rotate(225deg);
       }
       &:nth-child(2) {
         opacity: 0;
       }
       &:last-child {
-        -webkit-transform: translateY(-12.5px) rotate(135deg);
-        -moz-transform: translateY(-12.5px) rotate(135deg);
-        -ms-transform: translateY(-12.5px) rotate(135deg);
-        transform: translateY(-12.5px) rotate(135deg);
+        -webkit-transform: translateY(-13.5px) rotate(135deg);
+        -moz-transform: translateY(-13.5px) rotate(135deg);
+        -ms-transform: translateY(-13.5px) rotate(135deg);
+        transform: translateY(-13.5px) rotate(135deg);
       }
     }
   }
+}
+
+/* --- Body --- */
+.viewport {
+  background: url("../images/portfolio-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    -webkit-filter: blur(5px) brightness(60%);
+    -moz-filter: blur(5px) brightness(60%);
+    -ms-filter: blur(5px) brightness(60%);
+    filter: blur(5px) brightness(60%);
+    z-index: -1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .sec-title {
@@ -139,21 +169,10 @@ body {
 
 .sec-contents-skill {
   @extend .sec-contents-about;
-  p {
-    &::after {
-      background: $black;
-    }
-  }
   span {
     margin-bottom: 10px;
     font-size: 6.5rem;
   }
-}
-
-.bg-black {
-  background-size: cover;
-  background-position: center;
-  background-color: $black;
 }
 
 /* --- Flexbox --- */
@@ -217,16 +236,16 @@ svg {
 @-webkit-keyframes stroke-offset-1 {
   0% {
     stroke-dashoffset: 400%;
-    stroke: black;
+    stroke: white;
     fill:transparent;
   }
   50% {
     fill:transparent;
-    stroke: black;
+    stroke: white;
   }
   100% {
     stroke-dashoffset: 0%;
-    stroke: black;
+    stroke: white;
     fill: none;
   }
 }
@@ -234,16 +253,16 @@ svg {
 @keyframes stroke-offset-1 {
   0% {
     stroke-dashoffset: 400%;
-    stroke: black;
+    stroke: white;
     fill:transparent;
   }
   50% {
     fill:transparent;
-    stroke: black;
+    stroke: white;
   }
   100% {
     stroke-dashoffset: 0%;
-    stroke: black;
+    stroke: white;
     fill: none;
   }
 }
@@ -251,40 +270,45 @@ svg {
 @-webkit-keyframes stroke-offset-2 {
   0% {
     stroke-dashoffset: 450%;
-    stroke: black;
+    stroke: white;
     fill:transparent;
   }
   50% {
     fill:transparent;
-    stroke: black;
+    stroke: white;
   }
   100% {
     stroke-dashoffset: 0%;
-    stroke: black;
-    fill: black;
+    stroke: white;
+    fill: white;
   }
 }
 
 @keyframes stroke-offset-2 {
   0% {
     stroke-dashoffset: 450%;
-    stroke: black;
+    stroke: white;
     fill:transparent;
   }
   50% {
     fill:transparent;
-    stroke: black;
+    stroke: white;
   }
   100% {
     stroke-dashoffset: 0%;
-    stroke: black;
-    fill: black;
+    stroke: white;
+    fill: white;
   }
 }
 
-/* --- Blinking cursor --- */
+/* --- iTyped --- */
+.ityped {
+  color: $white;
+  font-size: 4.5rem;
+}
+
 .ityped-cursor {
-  color: gray;
+  color: $white;
   font-size: 4.5rem;
   opacity: 1;
   -webkit-animation: blink 0.6s infinite;

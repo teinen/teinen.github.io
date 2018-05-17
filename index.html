@@ -23,92 +23,97 @@
   </script>
 </head>
 <body>
-  <header>
-    <!-- Menu toggle button -->
-    <a id="menu-button" href="#" onclick="toggleMenu();">
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
-  </header>
-  <!-- Title section -->
-  <section id="header">
-    <div class="flex-box center flex-column">
-      <div>
-        <svg>
-          <text x="5" y="70" class="svg-main-title-1">Let me</text>
-          <text x="5" y="170" class="svg-main-title-2">SHOW</text>
-        </svg>
+  <div class="viewport">
+    <header>
+      <!-- Menu toggle button -->
+      <div class="top-bar">
+        <span></span>
       </div>
-      <div>
-        <span id="ityped" class="ityped"></span>
+      <a id="menu-button" href="#" onclick="toggleMenu();">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <!-- Title section -->
+    <section id="header">
+      <div class="flex-box center flex-column">
+        <div>
+          <svg>
+            <text x="5" y="70" class="svg-main-title-1">Let me</text>
+            <text x="5" y="170" class="svg-main-title-2">SHOW</text>
+          </svg>
+        </div>
+        <div>
+          <span id="ityped" class="ityped"></span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About section -->
-  <section id="about" style="color: white">
-    <div class="flex-box flex-column top bg-black">
+    <!-- About section -->
+    <section id="about" style="color: white">
+      <div class="flex-box flex-column top">
+        <!-- Section Title -->
+        <h2 class="wow animated fadeInUp" data-wow-duration="1.2s">
+          <i class="far fa-user fa-sm"></i>
+          <span class="sec-title white">About</span>
+        </h2>
+
+        <!-- Section Contents -->
+        <div class="sec-contents-about">
+          <div class="wow animated fadeInUp" data-wow-duration="1.2s">
+            <p class="title">Name</p>
+            <span>諦念</span>
+          </div>
+          <div class="wow animated fadeInUp" data-wow-duration="1.2s">
+            <p class="title">Job</p>
+            <span>サーバーサイドエンジニア</span>
+          </div>
+          <div class="wow animated fadeInUp" data-wow-duration="1.2s">
+            <p class="title">Hobby</p>
+            <span>ゲーム, 漫画, アニメ, プログラミング</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill section -->
+    <section id="skill" style="color: white">
       <!-- Section Title -->
-      <h2 class="wow animated fadeInUp" data-wow-duration="1.2s">
-        <i class="far fa-user fa-sm"></i>
-        <span class="sec-title white">About</span>
-      </h2>
+      <div class="flex-box flex-column top">
+        <h2 class="wow animated fadeInUp" data-wow-duration="1s">
+          <i class="fas fa-laptop fa-sm"></i>
+          <span class="sec-title">Skill</span>
+        </h2>
 
-      <!-- Section Contents -->
-      <div class="sec-contents-about">
-        <div class="wow animated fadeInUp" data-wow-duration="1.2s">
-          <p class="title">Name</p>
-          <span>諦念</span>
-        </div>
-        <div class="wow animated fadeInUp" data-wow-duration="1.2s">
-          <p class="title">Job</p>
-          <span>サーバーサイドエンジニア</span>
-        </div>
-        <div class="wow animated fadeInUp" data-wow-duration="1.2s">
-          <p class="title">Hobby</p>
-          <span>ゲーム, 漫画, アニメ, プログラミング</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skill section -->
-  <section id="skill">
-    <!-- Section Title -->
-    <div class="flex-box flex-column top">
-      <h2 class="wow animated fadeInUp" data-wow-duration="1s">
-        <i class="fas fa-laptop fa-sm"></i>
-        <span class="sec-title">Skill</span>
-      </h2>
-
-      <!-- Section Contents -->
-      <div class="container">
-        <div class="row sec-contents-skill">
-          <div class="four columns wow animated fadeInUp" data-wow-duration="1s">
-            <p class="title">Language</p>
-            <span class="devicons devicons-java"></span>
-            <span class="devicons devicons-ruby"></span>
-            <span class="devicons devicons-python"></span>
-            <span class="devicons devicons-swift"></span>
-            <span class="devicons devicons-html5"></span>
-            <span class="devicons devicons-css3"></span>
-            <span class="devicons devicons-javascript"></span>
-          </div>
-          <div class="four columns wow animated fadeInUp" data-wow-duration="1s">
-            <p class="title">Framework</p>
-            <span class="devicons devicons-ruby_on_rails"></span>
-            <span class="devicons devicons-react"></span>
-          </div>
-          <div class="four columns wow animated fadeInUp" data-wow-duration="1s">
-            <p class="title">Platform</p>
-            <span class="devicons devicons-aws"></span>
-            <span class="devicons devicons-docker"></span>
+        <!-- Section Contents -->
+        <div class="container">
+          <div class="row sec-contents-skill">
+            <div class="four columns wow animated fadeInUp" data-wow-duration="1s">
+              <p class="title">Language</p>
+              <span class="devicons devicons-java"></span>
+              <span class="devicons devicons-ruby"></span>
+              <span class="devicons devicons-python"></span>
+              <span class="devicons devicons-swift"></span>
+              <span class="devicons devicons-html5"></span>
+              <span class="devicons devicons-css3"></span>
+              <span class="devicons devicons-javascript"></span>
+            </div>
+            <div class="four columns wow animated fadeInUp" data-wow-duration="1s">
+              <p class="title">Framework</p>
+              <span class="devicons devicons-ruby_on_rails"></span>
+              <span class="devicons devicons-react"></span>
+            </div>
+            <div class="four columns wow animated fadeInUp" data-wow-duration="1s">
+              <p class="title">Platform</p>
+              <span class="devicons devicons-aws"></span>
+              <span class="devicons devicons-docker"></span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </body>
 <script type="text/javascript" src="./js/index.js"></script>
 </html>
