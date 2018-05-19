@@ -1,6 +1,6 @@
 // js modules
-import './modules/ityped.js';
-import './modules/main.js';
+import './modules/ityped';
+import { toggleTopNav } from './modules/toggleTopNav';
 
 // css modules
 import '../css/style.scss';

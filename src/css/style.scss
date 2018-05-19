@@ -12,7 +12,7 @@ $dark-gray: #424242;
 h2 {
   font-size: 9.0rem !important;
   font-weight: 600 !important;
-  margin-top: 20px !important;
+  margin-top: 80px !important;
 }
 
 /* --- Header --- */
@@ -70,7 +70,6 @@ h2 {
         &:hover {
           content: "";
           background-color: $dark-gray;
-          font-weight: 600;
         }
         a {
           display: block;
@@ -167,6 +166,10 @@ h2 {
 body {
   margin: 0;
   padding: 0;
+
+  section {
+    color: $white;
+  }
 }
 
 .sec-title {

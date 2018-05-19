@@ -1,5 +1,5 @@
 // Menu click action
-document.getElementById("menu-button").onclick = () => {
+const toggleTopNav = () => {
   // Get elements
   const menuButton = document.getElementById("menu-button");
   const topNav = document.getElementById("top-nav");
@@ -17,3 +17,7 @@ document.getElementById("menu-button").onclick = () => {
     }
   }
 };
+
+// Expose func to global scope
+window.toggleTopNav = toggleTopNav;
+export default toggleTopNav;

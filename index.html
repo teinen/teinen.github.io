@@ -27,16 +27,16 @@
       <!-- Menu toggle button -->
       <div id="top-nav">
         <nav>
-          <span>MENU</span>
+          <span>Contents</span>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" onclick='toggleTopNav();'>About</a></li>
+            <li><a href="#history" onclick='toggleTopNav();'>History</a></li>
+            <li><a href="#skill" onclick='toggleTopNav();'>Skill</a></li>
+            <li><a href="#contact" onclick='toggleTopNav();'>Contact</a></li>
           </ul>
         </nav>
       </div>
-      <a id="menu-button">
+      <a id="menu-button" onclick='toggleTopNav();'>
         <span></span>
         <span></span>
         <span></span>
@@ -58,7 +58,7 @@
     </section>
 
     <!-- About section -->
-    <section id="about" style="color: #F7F9F9">
+    <section id="about">
       <div class="flex-box flex-column top">
         <!-- Section Title -->
         <h2 class="wow animated fadeInUp" data-wow-duration="1.2s">
@@ -85,7 +85,7 @@
     </section>
 
     <!-- Skill section -->
-    <section id="skill" style="color: #F7F9F9">
+    <section id="skill">
       <!-- Section Title -->
       <div class="flex-box flex-column top">
         <h2 class="wow animated fadeInUp" data-wow-duration="1s">
