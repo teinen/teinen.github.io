@@ -3,12 +3,11 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = [
   {
-    entry: {
-      style: path.join(__dirname, "/css/style.scss"),
-    },
+    mode: "development",
+    entry: "./src/js/app.js",
     output: {
-      path: path.join(__dirname, "/dist"),
-      filename: "bundle.css"
+      filename: "bundle.js",
+      path: path.join(__dirname, "./public/")
     },
     module: {
       rules: [
@@ -16,16 +15,18 @@ module.exports = [
           test: /\.scss$/,
           loader: ExtractTextPlugin.extract({
             fallback: "style-loader",
-            use: ["css-loader", "sass-loader"]
+            use: [
+              {loader: "css-loader", options: {url: false}},
+              "sass-loader"]
           })
         },
         {
           test: /\.(png|jpeg|jpg)$/,
-          loader: "file-loader?name=./images/[name].[ext]"
+          loader: "file-loader"
         },
         {
           test: /\.(woff|eot|ttf|svg)$/,
-          loader: "file-loader?name=./fonts/[name].[ext]"
+          loader: "file-loader"
         }
       ]
     },
