@@ -13,11 +13,7 @@ document.getElementById("menu-button").onclick = () => {
     if (lists.hasOwnProperty(key)) {
       const li = lists[key];
       li.classList.toggle("animated");
-      if (key % 2 === 0) {
-        li.classList.toggle("bounceInLeft");
-      } else {
-        li.classList.toggle("bounceInRight");
-      }
+      li.classList.toggle("zoomIn");
     }
   }
 };
