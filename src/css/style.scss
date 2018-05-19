@@ -1,10 +1,10 @@
 /* --- Import --- */
-@import "./animate.css";
+@import "./animate.min.css";
 @import "./skeleton.css";
 @import "./devicons.min.css";
 
 /* --- Variables --- */
-$white:     #ffffff;
+$white:     #F7F9F9;
 $black:     #000000;
 $dark-gray: #424242;
 
@@ -16,27 +16,56 @@ h2 {
 }
 
 /* --- Header --- */
-.top-bar {
+#top-nav {
   display: block;
   position: fixed;
   width: 100vw;
-  height: 80px;
+  height: 60px;
+  color: $white;
   background-color: #000000;
-  border-bottom: double 2px #F7F9F9;
+  border-bottom: double 2px $white;
   opacity: 0.85;
   top: 0;
   right: 0;
   left: 0;
   z-index: 2;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+
+  span {
+    font-size: 5rem;
+    font-weight: 600;
+    &::before, &::after {
+      content: "-";
+    }
+  }
+
+  // nav
+  nav {
+    text-align: center;
+    visibility: hidden;
+  }
+
+  // open nav
+  &.opened {
+    height: 400px;
+
+    nav {
+      visibility: visible;
+    }
+  }
 }
+
 
 #menu-button {
   display: block;
-  width: 60px;
-  height: 50px;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   z-index: 3;
 
   &:hover {
@@ -52,9 +81,9 @@ h2 {
 
   span {
     display: block;
-    width: 50px;
-    height: 3px;
-    background: #F7F9F9;
+    width: 40px;
+    height: 2px;
+    background: $white;
     position: absolute;
     left: 5px;
     transition: all 0.2s;
@@ -64,7 +93,7 @@ h2 {
       top: 10px;
     }
     &:nth-child(2) {
-      margin-top: -2px;
+      margin-top: -1px;
       top: 50%;
     }
     &:last-child {
@@ -75,19 +104,19 @@ h2 {
   &.active {
     span {
       &:first-child {
-        -webkit-transform: translateY(13.5px) rotate(225deg);
-        -moz-transform: translateY(13.5px) rotate(225deg);
-        -ms-transform: translateY(13.5px) rotate(225deg);
-        transform: translateY(13.5px) rotate(225deg);
+        -webkit-transform: translateY(9.5px) rotate(225deg);
+        -moz-transform: translateY(9.5px) rotate(225deg);
+        -ms-transform: translateY(9.5px) rotate(225deg);
+        transform: translateY(9.5px) rotate(225deg);
       }
       &:nth-child(2) {
         opacity: 0;
       }
       &:last-child {
-        -webkit-transform: translateY(-13.5px) rotate(135deg);
-        -moz-transform: translateY(-13.5px) rotate(135deg);
-        -ms-transform: translateY(-13.5px) rotate(135deg);
-        transform: translateY(-13.5px) rotate(135deg);
+        -webkit-transform: translateY(-9.5px) rotate(135deg);
+        -moz-transform: translateY(-9.5px) rotate(135deg);
+        -ms-transform: translateY(-9.5px) rotate(135deg);
+        transform: translateY(-9.5px) rotate(135deg);
       }
     }
   }

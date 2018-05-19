@@ -1,6 +1,6 @@
 // js modules
 import './modules/ityped';
-import './modules/action';
+import './modules/main';
 
 // css modules
 import '../css/style.scss';
