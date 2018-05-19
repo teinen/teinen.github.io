@@ -21,35 +21,63 @@ h2 {
   position: fixed;
   width: 100vw;
   height: 60px;
-  color: $white;
   background-color: #000000;
   border-bottom: double 2px $white;
-  opacity: 0.85;
+  opacity: 0.9;
   top: 0;
   right: 0;
   left: 0;
   z-index: 2;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-
-  span {
-    font-size: 5rem;
-    font-weight: 600;
-    &::before, &::after {
-      content: "-";
-    }
-  }
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 
   // nav
   nav {
+    color: $white;
     text-align: center;
     visibility: hidden;
+    span {
+      font-size: 5rem;
+      font-weight: 600;
+      &::before, &::after {
+        content: "-";
+      }
+    }
+    ul {
+      li {
+        display: block;
+        list-style: none;
+        font-size: 3rem;
+        -webkit-animation-duration: 0.6s;
+        -moz-animation-duration: 0.6s;
+        animation-duration: 0.6s;
+        &:nth-child(2) {
+          -webkit-animation-delay: 0.1s;
+          -moz-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+        }
+        &:nth-child(3) {
+          -webkit-animation-delay: 0.1s;
+          -moz-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+        }
+        &:last-child {
+          -webkit-animation-delay: 0.1s;
+          -moz-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+        }
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   // open nav
   &.opened {
-    height: 400px;
+    height: 350px;
 
     nav {
       visibility: visible;
