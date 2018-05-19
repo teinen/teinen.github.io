@@ -481,7 +481,12 @@ h2 {
         -webkit-animation-delay: 0.1s;
         -moz-animation-delay: 0.1s;
         animation-delay: 0.1s; }
+      #top-nav nav ul li:hover {
+        content: "";
+        background-color: #424242;
+        font-weight: 600; }
       #top-nav nav ul li a {
+        display: block;
         color: #F7F9F9;
         text-decoration: none; }
   #top-nav.opened {
@@ -520,17 +525,17 @@ h2 {
     #menu-button span:last-child {
       bottom: 10px; }
   #menu-button.active span:first-child {
-    -webkit-transform: translateY(9.5px) rotate(225deg);
-    -moz-transform: translateY(9.5px) rotate(225deg);
-    -ms-transform: translateY(9.5px) rotate(225deg);
-    transform: translateY(9.5px) rotate(225deg); }
+    -webkit-transform: translateY(9px) rotate(225deg);
+    -moz-transform: translateY(9px) rotate(225deg);
+    -ms-transform: translateY(9px) rotate(225deg);
+    transform: translateY(9px) rotate(225deg); }
   #menu-button.active span:nth-child(2) {
     opacity: 0; }
   #menu-button.active span:last-child {
-    -webkit-transform: translateY(-9.5px) rotate(135deg);
-    -moz-transform: translateY(-9.5px) rotate(135deg);
-    -ms-transform: translateY(-9.5px) rotate(135deg);
-    transform: translateY(-9.5px) rotate(135deg); }
+    -webkit-transform: translateY(-9px) rotate(135deg);
+    -moz-transform: translateY(-9px) rotate(135deg);
+    -ms-transform: translateY(-9px) rotate(135deg);
+    transform: translateY(-9px) rotate(135deg); }
 
 /* --- Body --- */
 .viewport {

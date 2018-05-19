@@ -67,7 +67,13 @@ h2 {
           -moz-animation-delay: 0.1s;
           animation-delay: 0.1s;
         }
+        &:hover {
+          content: "";
+          background-color: $dark-gray;
+          font-weight: 600;
+        }
         a {
+          display: block;
           color: $white;
           text-decoration: none;
         }
@@ -132,19 +138,19 @@ h2 {
   &.active {
     span {
       &:first-child {
-        -webkit-transform: translateY(9.5px) rotate(225deg);
-        -moz-transform: translateY(9.5px) rotate(225deg);
-        -ms-transform: translateY(9.5px) rotate(225deg);
-        transform: translateY(9.5px) rotate(225deg);
+        -webkit-transform: translateY(9px) rotate(225deg);
+        -moz-transform: translateY(9px) rotate(225deg);
+        -ms-transform: translateY(9px) rotate(225deg);
+        transform: translateY(9px) rotate(225deg);
       }
       &:nth-child(2) {
         opacity: 0;
       }
       &:last-child {
-        -webkit-transform: translateY(-9.5px) rotate(135deg);
-        -moz-transform: translateY(-9.5px) rotate(135deg);
-        -ms-transform: translateY(-9.5px) rotate(135deg);
-        transform: translateY(-9.5px) rotate(135deg);
+        -webkit-transform: translateY(-9px) rotate(135deg);
+        -moz-transform: translateY(-9px) rotate(135deg);
+        -ms-transform: translateY(-9px) rotate(135deg);
+        transform: translateY(-9px) rotate(135deg);
       }
     }
   }
