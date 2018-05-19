@@ -3978,23 +3978,10 @@ h2 {
 
 /* --- Body --- */
 .viewport {
-  background: url(./images/portfolio-bg.png) no-repeat center center fixed;
+  background: url(./images/portfolio-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   position: relative;
   z-index: 0; }
-  .viewport::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    bottom: -5px;
-    left: -5px;
-    right: -5px;
-    background: inherit;
-    -webkit-filter: blur(5px) brightness(60%);
-    -moz-filter: blur(5px) brightness(60%);
-    -ms-filter: blur(5px) brightness(60%);
-    filter: blur(5px) brightness(60%);
-    z-index: -1; }
 
 body {
   margin: 0;
