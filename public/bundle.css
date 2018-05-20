@@ -544,7 +544,7 @@ body {
   .sec-contents div, .sec-contents-bio div, .sec-contents-skill div, .sec-contents-contact div {
     margin-bottom: 50px; }
   .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title, .sec-contents-contact p.title {
-    font-size: 5.0rem;
+    font-size: 4rem;
     font-weight: bold;
     position: relative;
     display: inline-block; }
