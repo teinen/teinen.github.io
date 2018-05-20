@@ -131,11 +131,8 @@ h2 {
 
 /* --- Body --- */
 .viewport {
-  background: url(./images/portfolio-bg.jpg) no-repeat fixed;
-  // @media screen and (min-width: 1080px) {background: url(./images/portfolio-bg.jpg) no-repeat center center fixed;}
-  background-position: center;
+  background: url(./images/portfolio-bg.jpg) no-repeat center center fixed;
   background-size: cover;
-  position: relative;
   z-index: 0;
 }
 
@@ -150,19 +147,14 @@ body {
 
 .sec-title {
   margin-left: 5px;
-
-  /* About sec */
-  &.white {
-    color: $white;
-  }
 }
 
-.sec-contents-about {
+.sec-contents {
   font-size: 3.0rem;
   text-align: center;
 
   div {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   /* title */
@@ -176,8 +168,8 @@ body {
     &::after {
       content: '';
       position: absolute;
-      bottom: -4px;
-      left: -0;
+      bottom: 0px;
+      left: 0px;
       width: 100%;
       height: 3px;
       background: $white;
@@ -195,8 +187,20 @@ body {
   }
 }
 
+.sec-contents-bio {
+  @extend .sec-contents;
+  table {
+    th {
+      font-size: 3rem;
+    }
+    td {
+      font-size: 2.5rem;
+    }
+  }
+}
+
 .sec-contents-skill {
-  @extend .sec-contents-about;
+  @extend .sec-contents;
   span {
     margin-bottom: 10px;
     font-size: 6.5rem;
@@ -212,22 +216,18 @@ body {
   display: flex;
   align-items: center;
 
-  /* set center of display */
   &.center {
     justify-content: center;
   }
 
-  /* set content to top */
   &.top {
     justify-content: start;
   }
 
-  /* column */
   &.flex-column {
     flex-direction: column;
   }
 
-  /* row */
   .flex-row {
     flex-direction: row;
   }

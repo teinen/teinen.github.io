@@ -523,10 +523,8 @@ h2 {
 
 /* --- Body --- */
 .viewport {
-  background: url(./images/portfolio-bg.jpg) no-repeat fixed;
-  background-position: center;
+  background: url(./images/portfolio-bg.jpg) no-repeat center center fixed;
   background-size: cover;
-  position: relative;
   z-index: 0; }
 
 body {
@@ -536,27 +534,24 @@ body {
     color: #F7F9F9; }
 
 .sec-title {
-  margin-left: 5px;
-  /* About sec */ }
-  .sec-title.white {
-    color: #F7F9F9; }
+  margin-left: 5px; }
 
-.sec-contents-about, .sec-contents-skill {
+.sec-contents, .sec-contents-bio, .sec-contents-skill {
   font-size: 3.0rem;
   text-align: center;
   /* title */ }
-  .sec-contents-about div, .sec-contents-skill div {
-    margin-bottom: 80px; }
-  .sec-contents-about p.title, .sec-contents-skill p.title {
+  .sec-contents div, .sec-contents-bio div, .sec-contents-skill div {
+    margin-bottom: 50px; }
+  .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
     font-size: 5.0rem;
     font-weight: bold;
     position: relative;
     display: inline-block; }
-  .sec-contents-about p::after, .sec-contents-skill p::after {
+  .sec-contents p::after, .sec-contents-bio p::after, .sec-contents-skill p::after {
     content: '';
     position: absolute;
-    bottom: -4px;
-    left: -0;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
     height: 3px;
     background: #F7F9F9;
@@ -568,11 +563,17 @@ body {
     transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s, -webkit-transform .3s; }
-  .sec-contents-about p:hover::after, .sec-contents-skill p:hover::after {
+  .sec-contents p:hover::after, .sec-contents-bio p:hover::after, .sec-contents-skill p:hover::after {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1); }
-  .sec-contents-about span, .sec-contents-skill span {
+  .sec-contents span, .sec-contents-bio span, .sec-contents-skill span {
     display: block; }
+
+.sec-contents-bio table th {
+  font-size: 3rem; }
+
+.sec-contents-bio table td {
+  font-size: 2.5rem; }
 
 .sec-contents-skill span {
   margin-bottom: 10px;
@@ -589,11 +590,7 @@ body {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  /* set center of display */
-  /* set content to top */
-  /* column */
-  /* row */ }
+          align-items: center; }
   .flex-box.center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

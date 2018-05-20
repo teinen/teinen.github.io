@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!-- basic -->
+  <!-- meta info -->
   <meta charset="utf-8">
   <!-- title -->
   <title>Let me SHOW</title>
@@ -35,7 +35,7 @@
           <span>Contents</span>
           <ul>
             <li><a data-scroll href="#about" onclick='toggleTopNav();'>About</a></li>
-            <li><a data-scroll href="#history" onclick='toggleTopNav();'>History</a></li>
+            <li><a data-scroll href="#biography" onclick='toggleTopNav();'>Biography</a></li>
             <li><a data-scroll href="#skill" onclick='toggleTopNav();'>Skill</a></li>
             <li><a data-scroll href="#contact" onclick='toggleTopNav();'>Contact</a></li>
           </ul>
@@ -66,24 +66,86 @@
     <section id="about">
       <div class="flex-box flex-column top">
         <!-- Section Title -->
-        <h2 class="wow animated fadeInUp" data-wow-duration="1.2s">
-          <i class="far fa-user fa-sm"></i>
-          <span class="sec-title white">About</span>
+        <h2>
+          <!-- <i class="far fa-user fa-xs"></i> -->
+          <span class="sec-title">About</span>
         </h2>
 
         <!-- Section Contents -->
-        <div class="sec-contents-about">
-          <div class="wow animated fadeInUp" data-wow-duration="1.2s">
-            <p class="title">Name</p>
-            <span>諦念</span>
+        <div class="container">
+          <div class="sec-contents">
+            <div class="wow animated bounceInLeft" data-wow-duration="1s">
+              <p class="title">Name</p>
+              <span>諦念</span>
+              <span>(teinen)</span>
+            </div>
+            <div class="wow animated bounceInRight" data-wow-duration="1s">
+              <p class="title">Job</p>
+              <span>Server Side Engineer</span>
+            </div>
+            <div class="wow animated bounceInLeft" data-wow-duration="1s">
+              <p class="title">Hobby</p>
+              <span>ゲーム, 漫画, アニメ, プログラミング</span>
+            </div>
           </div>
-          <div class="wow animated fadeInUp" data-wow-duration="1.2s">
-            <p class="title">Job</p>
-            <span>サーバーサイドエンジニア</span>
-          </div>
-          <div class="wow animated fadeInUp" data-wow-duration="1.2s">
-            <p class="title">Hobby</p>
-            <span>ゲーム, 漫画, アニメ, プログラミング</span>
+        </div>
+        </div>
+    </section>
+
+    <!-- Biography section -->
+    <section id="biography">
+      <div class="flex-box flex-column top">
+        <!-- Section Title -->
+        <h2>
+          <!-- <i class="fas fa-tasks fa-xs"></i> -->
+          <span class="sec-title">Biography</span>
+        </h2>
+
+        <!-- Section Contents -->
+        <div class="container">
+          <div class="sec-contents-bio">
+            <table class="u-full-width">
+              <thead>
+                <tr><th>Education</th><th></th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2012.03</td>
+                  <td>
+                    <span class="wow animated bounceInRight">福島県立 福島高等学校 卒業</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2012.04</td>
+                  <td>
+                    <span class="wow animated bounceInRight">東北大学 教育学部 教育科学科 入学</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2016.03</td>
+                  <td>
+                    <span class="wow animated bounceInRight">東北大学 教育学部 教育科学科 卒業</span>
+                  </td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th>Work</th><th></th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2016.08</td>
+                  <td><span class="wow animated bounceInRight">不動産向け BtoBシステム開発</span></td>
+                </tr>
+                <tr>
+                  <td>2017.10</td>
+                  <td><span class="wow animated bounceInRight">社内向け 人材管理システム開発</span></td>
+                </tr>
+                <tr>
+                  <td>2018.04</td>
+                  <td><span class="wow animated bounceInRight">社内向け 開発ツール導入</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -93,8 +155,8 @@
     <section id="skill">
       <!-- Section Title -->
       <div class="flex-box flex-column top">
-        <h2 class="wow animated fadeInUp" data-wow-duration="1s">
-          <i class="fas fa-laptop fa-sm"></i>
+        <h2>
+          <!-- <i class="fas fa-laptop fa-xs"></i> -->
           <span class="sec-title">Skill</span>
         </h2>
 
