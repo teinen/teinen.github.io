@@ -444,7 +444,7 @@ h2 {
   width: 100vw;
   height: 60px;
   background-color: #000000;
-  border-bottom: double 2px #F7F9F9;
+  border-bottom: solid 2px #F7F9F9;
   opacity: 0.9;
   top: 0;
   right: 0;
@@ -503,9 +503,9 @@ h2 {
   right: 10px;
   z-index: 3; }
   #menu-button:hover span:first-child {
-    transform: translateY(-4.5px); }
+    transform: translateY(-4px); }
   #menu-button:hover span:last-child {
-    transform: translateY(4.5px); }
+    transform: translateY(4px); }
   #menu-button span {
     display: block;
     width: 40px;
@@ -524,15 +524,15 @@ h2 {
     #menu-button span:last-child {
       bottom: 10px; }
   #menu-button.active span:first-child {
-    -webkit-transform: translateY(9px) rotate(225deg);
-    -moz-transform: translateY(9px) rotate(225deg);
-    transform: translateY(9px) rotate(225deg); }
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -moz-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg); }
   #menu-button.active span:nth-child(2) {
     opacity: 0; }
   #menu-button.active span:last-child {
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg); }
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -moz-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg); }
 
 /* --- Body --- */
 .viewport {

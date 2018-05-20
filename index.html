@@ -16,9 +16,14 @@
     crossorigin="anonymous"></script>
   <!-- Javascript -->
   <script type="text/javascript" src="https://unpkg.com/ityped@1.0.1"></script>
-  <script src="./src/js/modules/wow.min.js"></script>
+  <script src="./src/js/wow.min.js"></script>
+  <script src="./src/js/smooth-scroll.polyfills.min.js"></script>
+  <!-- Initialization -->
   <script>
     new WOW().init();
+  </script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 </head>
 <body>
@@ -29,10 +34,10 @@
         <nav>
           <span>Contents</span>
           <ul>
-            <li><a href="#about" onclick='toggleTopNav();'>About</a></li>
-            <li><a href="#history" onclick='toggleTopNav();'>History</a></li>
-            <li><a href="#skill" onclick='toggleTopNav();'>Skill</a></li>
-            <li><a href="#contact" onclick='toggleTopNav();'>Contact</a></li>
+            <li><a data-scroll href="#about" onclick='toggleTopNav();'>About</a></li>
+            <li><a data-scroll href="#history" onclick='toggleTopNav();'>History</a></li>
+            <li><a data-scroll href="#skill" onclick='toggleTopNav();'>Skill</a></li>
+            <li><a data-scroll href="#contact" onclick='toggleTopNav();'>Contact</a></li>
           </ul>
         </nav>
       </div>
