@@ -529,7 +529,8 @@ h2 {
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
   body section {
     color: #F7F9F9; }
 
