@@ -16,7 +16,21 @@ module.exports = [
           loader: ExtractTextPlugin.extract({
             fallback: "style-loader",
             use: [
-              {loader: "css-loader", options: {url: false}},
+              {
+                loader: "css-loader",
+                options: {
+                  url: false
+                }
+              },
+              {
+                loader: "postcss-loader",
+                options: {
+                  url: false,
+                  plugins: [
+                    require('autoprefixer')
+                  ]
+                }
+              },
               "sass-loader"]
           })
         },
