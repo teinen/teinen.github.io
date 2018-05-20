@@ -450,6 +450,7 @@ h2 {
   right: 0;
   left: 0;
   z-index: 2;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s; }
   #top-nav nav {
     color: #F7F9F9;
@@ -502,6 +503,7 @@ h2 {
     background: #F7F9F9;
     position: absolute;
     left: 5px;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s; }
     #menu-button span:first-child {
       top: 10px; }
@@ -562,6 +564,7 @@ body {
             transform: scale(0, 1);
     -webkit-transform-origin: center top;
             transform-origin: center top;
+    -webkit-transition: -webkit-transform .3s;
     transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s, -webkit-transform .3s; }
@@ -581,20 +584,34 @@ body {
   height: auto;
   min-height: 100vh;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* set center of display */
   /* set content to top */
   /* column */
   /* row */ }
   .flex-box.center {
-    justify-content: center; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .flex-box.top {
-    justify-content: start; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
   .flex-box.flex-column {
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .flex-box .flex-row {
-    flex-direction: row; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
 
 /* --- SVG --- */
 svg {

@@ -18,16 +18,15 @@ module.exports = [
             use: [
               {
                 loader: "css-loader",
-                options: {
-                  url: false
-                }
+                options: { url: false }
               },
               {
                 loader: "postcss-loader",
                 options: {
-                  url: false,
                   plugins: [
-                    require('autoprefixer')
+                    require('autoprefixer')({
+                      browsers: ["last 2 versions"]
+                    })
                   ]
                 }
               },
