@@ -28,230 +28,228 @@
   </script>
 </head>
 <body>
-  <div class="viewport">
-    <header>
-      <!-- Menu toggle button -->
-      <div id="top-nav">
-        <nav>
-          <span>Contents</span>
-          <ul>
-            <li><a data-scroll href="#about" onclick='toggleTopNav();'>About</a></li>
-            <li><a data-scroll href="#biography" onclick='toggleTopNav();'>Biography</a></li>
-            <li><a data-scroll href="#skill" onclick='toggleTopNav();'>Skill</a></li>
-            <li><a data-scroll href="#work" onclick='toggleTopNav();'>Work</a></li>
-          </ul>
-        </nav>
+  <header>
+    <!-- Menu toggle button -->
+    <div id="top-nav">
+      <nav>
+        <span>Contents</span>
+        <ul>
+          <li><a data-scroll href="#about" onclick='toggleTopNav();'>About</a></li>
+          <li><a data-scroll href="#biography" onclick='toggleTopNav();'>Biography</a></li>
+          <li><a data-scroll href="#skill" onclick='toggleTopNav();'>Skill</a></li>
+          <li><a data-scroll href="#work" onclick='toggleTopNav();'>Work</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a id="menu-button" onclick='toggleTopNav();'>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </header>
+
+  <!-- Title section -->
+  <section id="header">
+    <div class="flex-box center flex-column">
+      <div>
+        <svg style="visibility: visible;">
+          <text x="5" y="70" class="svg-main-title-1">Let me</text>
+          <text x="5" y="170" class="svg-main-title-2">SHOW</text>
+          <text x="25" y="60" class="svg-main-title-mobile-1">Let me</text>
+          <text x="25" y="130" class="svg-main-title-mobile-2">SHOW</text>
+        </svg>
       </div>
-      <a id="menu-button" onclick='toggleTopNav();'>
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </header>
-
-    <!-- Title section -->
-    <section id="header">
-      <div class="flex-box center flex-column">
-        <div>
-          <svg style="visibility: visible;">
-            <text x="5" y="70" class="svg-main-title-1">Let me</text>
-            <text x="5" y="170" class="svg-main-title-2">SHOW</text>
-            <text x="25" y="60" class="svg-main-title-mobile-1">Let me</text>
-            <text x="25" y="130" class="svg-main-title-mobile-2">SHOW</text>
-          </svg>
-        </div>
-        <div>
-          <span id="ityped" class="ityped"></span>
-        </div>
+      <div>
+        <span id="ityped" class="ityped"></span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About section -->
-    <section id="about">
-      <div class="flex-box flex-column top">
-        <!-- Section Title -->
-        <h2>
-          <!-- <i class="far fa-user fa-xs"></i> -->
-          <span>About</span>
-        </h2>
-
-        <!-- Section Contents -->
-        <div class="container">
-          <div class="sec-contents">
-            <div class="wow animated bounceInLeft" data-wow-duration="1s">
-              <p class="title">Name</p>
-              <span>諦念</span>
-              <span>(teinen)</span>
-            </div>
-            <div class="wow animated bounceInRight" data-wow-duration="1s">
-              <p class="title">Job</p>
-              <span>Server Side Engineer</span>
-            </div>
-            <div class="wow animated bounceInLeft" data-wow-duration="1s">
-              <p class="title">Hobby</p>
-              <span>ゲーム, 漫画, アニメ, プログラミング</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Biography section -->
-    <section id="biography">
-      <div class="flex-box flex-column top">
-        <!-- Section Title -->
-        <h2>
-          <!-- <i class="fas fa-tasks fa-xs"></i> -->
-          <span>Biography</span>
-        </h2>
-
-        <!-- Section Contents -->
-        <div class="container">
-          <div class="sec-contents-bio">
-            <table class="u-full-width">
-              <thead>
-                <tr><th>Education</th><th></th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2012.03</td>
-                  <td>
-                    <span class="wow animated bounceInRight" data-wow-duration="1s">
-                      福島県立 福島高等学校 卒業
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2012.04</td>
-                  <td>
-                    <span class="wow animated bounceInRight" data-wow-duration="1s">
-                      東北大学 教育学部 教育科学科 入学
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2016.03</td>
-                  <td>
-                    <span class="wow animated bounceInRight" data-wow-duration="1s">
-                      東北大学 教育学部 教育科学科 卒業
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-              <thead>
-                <tr><th>Work</th><th></th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2016.08</td>
-                  <td><span class="wow animated bounceInRight" data-wow-duration="1s" data-wow-duration="1s">
-                    不動産向け BtoBシステム開発
-                  </span></td>
-                </tr>
-                <tr>
-                  <td>2017.10</td>
-                  <td><span class="wow animated bounceInRight" data-wow-duration="1s">
-                    社内向け 人材管理システム開発
-                  </span></td>
-                </tr>
-                <tr>
-                  <td>2018.04</td>
-                  <td><span class="wow animated bounceInRight" data-wow-duration="1s">
-                    社内向け 開発ツール導入
-                  </span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skill section -->
-    <section id="skill">
+  <!-- About section -->
+  <section id="about">
+    <div class="flex-box flex-column top">
       <!-- Section Title -->
-      <div class="flex-box flex-column top">
-        <h2>
-          <!-- <i class="fas fa-laptop fa-xs"></i> -->
-          <span>Skill</span>
-        </h2>
+      <h2>
+        <!-- <i class="far fa-user fa-xs"></i> -->
+        <span>About</span>
+      </h2>
 
-        <!-- Section Contents -->
-        <div class="container">
-          <div class="row sec-contents-skill">
-            <div class="three columns">
-              <p class="title wow animated bounceIn" data-wow-duration="1s">
-                Front-end
-              </p>
-              <div class="wow animated bounceInUp" data-wow-duration="1.2s">
-                <span class="devicons devicons-html5"></span>
-                <span class="devicons devicons-css3"></span>
-                <span class="devicons devicons-sass"></span>
-                <span class="devicons devicons-javascript"></span>
-                <span class="devicons devicons-react"></span>
-              </div>
+      <!-- Section Contents -->
+      <div class="container">
+        <div class="sec-contents">
+          <div class="wow animated bounceInLeft" data-wow-duration="1s">
+            <p class="title">Name</p>
+            <span>諦念</span>
+            <span>(teinen)</span>
+          </div>
+          <div class="wow animated bounceInRight" data-wow-duration="1s">
+            <p class="title">Job</p>
+            <span>Server Side Engineer</span>
+          </div>
+          <div class="wow animated bounceInLeft" data-wow-duration="1s">
+            <p class="title">Hobby</p>
+            <span>ゲーム, 漫画, アニメ, プログラミング</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biography section -->
+  <section id="biography">
+    <div class="flex-box flex-column top">
+      <!-- Section Title -->
+      <h2>
+        <!-- <i class="fas fa-tasks fa-xs"></i> -->
+        <span>Biography</span>
+      </h2>
+
+      <!-- Section Contents -->
+      <div class="container">
+        <div class="sec-contents-bio">
+          <table class="u-full-width">
+            <thead>
+              <tr><th>Education</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2012.03</td>
+                <td>
+                  <span class="wow animated bounceInRight" data-wow-duration="1s">
+                    福島県立 福島高等学校 卒業
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>2012.04</td>
+                <td>
+                  <span class="wow animated bounceInRight" data-wow-duration="1s">
+                    東北大学 教育学部 教育科学科 入学
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>2016.03</td>
+                <td>
+                  <span class="wow animated bounceInRight" data-wow-duration="1s">
+                    東北大学 教育学部 教育科学科 卒業
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr><th>Work</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2016.08</td>
+                <td><span class="wow animated bounceInRight" data-wow-duration="1s" data-wow-duration="1s">
+                  不動産向け BtoBシステム開発
+                </span></td>
+              </tr>
+              <tr>
+                <td>2017.10</td>
+                <td><span class="wow animated bounceInRight" data-wow-duration="1s">
+                  社内向け 人材管理システム開発
+                </span></td>
+              </tr>
+              <tr>
+                <td>2018.04</td>
+                <td><span class="wow animated bounceInRight" data-wow-duration="1s">
+                  社内向け 開発ツール導入
+                </span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill section -->
+  <section id="skill">
+    <!-- Section Title -->
+    <div class="flex-box flex-column top">
+      <h2>
+        <!-- <i class="fas fa-laptop fa-xs"></i> -->
+        <span>Skill</span>
+      </h2>
+
+      <!-- Section Contents -->
+      <div class="container">
+        <div class="row sec-contents-skill">
+          <div class="three columns">
+            <p class="title wow animated bounceIn" data-wow-duration="1s">
+              Front-end
+            </p>
+            <div class="wow animated bounceInUp" data-wow-duration="1.2s">
+              <span class="devicons devicons-html5"></span>
+              <span class="devicons devicons-css3"></span>
+              <span class="devicons devicons-sass"></span>
+              <span class="devicons devicons-javascript"></span>
+              <span class="devicons devicons-react"></span>
             </div>
-            <div class="three columns">
-              <p class="title wow animated bounceIn" data-wow-duration="1s">
-                Back-end
-              </p>
-              <div class="wow animated bounceInUp" data-wow-duration="1.2s">
-                <span class="devicons devicons-java"></span>
-                <span class="devicons devicons-ruby"></span>
-                <span class="devicons devicons-python"></span>
-                <span class="devicons devicons-swift"></span>
-                <span class="devicons devicons-ruby_on_rails"></span>
-                <span class="devicons devicons-mysql"></span>
-                <span class="devicons devicons-postgresql"></span>
-              </div>
+          </div>
+          <div class="three columns">
+            <p class="title wow animated bounceIn" data-wow-duration="1s">
+              Back-end
+            </p>
+            <div class="wow animated bounceInUp" data-wow-duration="1.2s">
+              <span class="devicons devicons-java"></span>
+              <span class="devicons devicons-ruby"></span>
+              <span class="devicons devicons-python"></span>
+              <span class="devicons devicons-swift"></span>
+              <span class="devicons devicons-ruby_on_rails"></span>
+              <span class="devicons devicons-mysql"></span>
+              <span class="devicons devicons-postgresql"></span>
             </div>
-            <div class="three columns">
-              <p class="title wow animated bounceIn" data-wow-duration="1s">
-                Platform
-              </p>
-              <div class="wow animated bounceInUp" data-wow-duration="1.2s">
-                <span class="devicons devicons-aws"></span>
-                <span class="devicons devicons-docker"></span>
-                <span class="devicons devicons-linux"></span>
-                <span class="devicons devicons-atlassian"></span>
-              </div>
+          </div>
+          <div class="three columns">
+            <p class="title wow animated bounceIn" data-wow-duration="1s">
+              Platform
+            </p>
+            <div class="wow animated bounceInUp" data-wow-duration="1.2s">
+              <span class="devicons devicons-aws"></span>
+              <span class="devicons devicons-docker"></span>
+              <span class="devicons devicons-linux"></span>
+              <span class="devicons devicons-atlassian"></span>
             </div>
-            <div class="three columns">
-              <p class="title wow animated bounceIn" data-wow-duration="1s">
-                Dev tool
-              </p>
-              <div class="wow animated bounceInUp" data-wow-duration="1.2s">
-                <span class="devicons devicons-git"></span>
-                <span class="devicons devicons-jira"></span>
-                <span class="devicons devicons-eclipse"></span>
-                <span class="devicons devicons-visualstudio"></span>
-                <span class="devicons devicons-photoshop"></span>
-                <span class="devicons devicons-illustrator"></span>
-              </div>
+          </div>
+          <div class="three columns">
+            <p class="title wow animated bounceIn" data-wow-duration="1s">
+              Dev tool
+            </p>
+            <div class="wow animated bounceInUp" data-wow-duration="1.2s">
+              <span class="devicons devicons-git"></span>
+              <span class="devicons devicons-jira"></span>
+              <span class="devicons devicons-eclipse"></span>
+              <span class="devicons devicons-visualstudio"></span>
+              <span class="devicons devicons-photoshop"></span>
+              <span class="devicons devicons-illustrator"></span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Work section -->
-    <section id="work">
-      <div class="flex-box flex-column top">
-        <!-- Section Title -->
-        <h2>
-          <!-- <i class="far fa-user fa-xs"></i> -->
-          <span>Work</span>
-        </h2>
+  <!-- Work section -->
+  <section id="work">
+    <div class="flex-box flex-column top">
+      <!-- Section Title -->
+      <h2>
+        <!-- <i class="far fa-user fa-xs"></i> -->
+        <span>Work</span>
+      </h2>
 
-        <!-- Section Contents -->
-        <div style="text-align: center;">
-          <h1 class="wow animated shake" data-wow-delay="0.5s">
-            In Progress...
-          </h1>
-        </div>
+      <!-- Section Contents -->
+      <div style="text-align: center;">
+        <h1 class="wow animated shake" data-wow-delay="0.5s">
+          In Progress...
+        </h1>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!-- Go to Top button -->
   <a data-scroll id="go-to-top" href="#">

@@ -527,15 +527,20 @@ h2 {
             transform: translateY(-9px) rotate(-45deg); }
 
 /* --- Body --- */
-.viewport {
-  background: url(./images/portfolio-bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  z-index: 0; }
-
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-image: url(./images/portfolio-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0; }
+  @media screen and (max-width: 414px) {
+    body {
+      background-image: none;
+      background-color: #000000; } }
   body section {
     color: #F7F9F9; }
 
@@ -703,7 +708,7 @@ body {
 
 @-webkit-keyframes stroke-offset-1 {
   0% {
-    stroke-dashoffset: 450%;
+    stroke-dashoffset: 400%;
     stroke: white;
     fill: transparent; }
   50% {
@@ -716,7 +721,7 @@ body {
 
 @keyframes stroke-offset-1 {
   0% {
-    stroke-dashoffset: 450%;
+    stroke-dashoffset: 400%;
     stroke: white;
     fill: transparent; }
   50% {
@@ -729,7 +734,7 @@ body {
 
 @-webkit-keyframes stroke-offset-2 {
   0% {
-    stroke-dashoffset: 500%;
+    stroke-dashoffset: 450%;
     stroke: white;
     fill: transparent; }
   50% {
@@ -742,7 +747,7 @@ body {
 
 @keyframes stroke-offset-2 {
   0% {
-    stroke-dashoffset: 500%;
+    stroke-dashoffset: 450%;
     stroke: white;
     fill: transparent; }
   50% {
