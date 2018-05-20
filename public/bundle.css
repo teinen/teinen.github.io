@@ -528,27 +528,38 @@ h2 {
 
 /* --- Body --- */
 .viewport {
-  background: url(./images/portfolio-bg.jpg) no-repeat center fixed;
+  background: url(./images/portfolio-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   z-index: 0; }
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
   body section {
     color: #F7F9F9; }
 
 .sec-contents, .sec-contents-bio, .sec-contents-skill {
-  font-size: 3.0rem;
   text-align: center;
   /* title */ }
+  @media (max-width: 414px) {
+    .sec-contents, .sec-contents-bio, .sec-contents-skill {
+      font-size: 2rem; } }
+  @media (min-width: 415px) {
+    .sec-contents, .sec-contents-bio, .sec-contents-skill {
+      font-size: 3rem; } }
   .sec-contents div, .sec-contents-bio div, .sec-contents-skill div {
     margin-bottom: 50px; }
   .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
-    font-size: 4rem;
     font-weight: bold;
     position: relative;
     display: inline-block; }
+    @media (max-width: 414px) {
+      .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
+        font-size: 3rem; } }
+    @media (min-width: 415px) {
+      .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
+        font-size: 4rem; } }
   .sec-contents p::after, .sec-contents-bio p::after, .sec-contents-skill p::after {
     content: '';
     position: absolute;
@@ -571,15 +582,30 @@ body {
   .sec-contents span, .sec-contents-bio span, .sec-contents-skill span {
     display: block; }
 
-.sec-contents-bio table th {
-  font-size: 3rem; }
+@media (max-width: 414px) {
+  .sec-contents-bio table th {
+    font-size: 2.5rem; } }
 
-.sec-contents-bio table td {
-  font-size: 2.5rem; }
+@media (min-width: 415px) {
+  .sec-contents-bio table th {
+    font-size: 3rem; } }
+
+@media (max-width: 414px) {
+  .sec-contents-bio table td {
+    font-size: 2rem; } }
+
+@media (min-width: 415px) {
+  .sec-contents-bio table td {
+    font-size: 2.5rem; } }
 
 .sec-contents-skill span {
-  margin-bottom: 10px;
-  font-size: 6.5rem; }
+  margin-bottom: 10px; }
+  @media (max-width: 414px) {
+    .sec-contents-skill span {
+      font-size: 5.5rem; } }
+  @media (min-width: 415px) {
+    .sec-contents-skill span {
+      font-size: 6.5rem; } }
 
 #go-to-top {
   display: block;
@@ -627,24 +653,27 @@ body {
   svg {
     width: 300px;
     height: 150px; }
-    svg .svg-main-title-1 {
-      font-size: 4rem;
+    svg .svg-main-title-mobile-1 {
+      font-size: 5rem;
       font-weight: 600;
       fill: none;
       stroke: none;
       stroke-dasharray: 400% 400%;
       stroke-width: 1.5px;
-      -webkit-animation: stroke-offset-1 5s linear 1s forwards;
-              animation: stroke-offset-1 5s linear 1s forwards; }
-    svg .svg-main-title-2 {
-      font-size: 6rem;
+      -webkit-animation: stroke-offset-1 3s linear 1s forwards;
+              animation: stroke-offset-1 3s linear 1s forwards; }
+    svg .svg-main-title-mobile-2 {
+      font-size: 8rem;
       font-weight: 600;
       fill: none;
       stroke: none;
       stroke-dasharray: 450% 450%;
       stroke-width: 1.5px;
-      -webkit-animation: stroke-offset-2 5s linear 1s forwards;
-              animation: stroke-offset-2 5s linear 1s forwards; } }
+      -webkit-animation: stroke-offset-2 3s linear 1s forwards;
+              animation: stroke-offset-2 3s linear 1s forwards; }
+    svg .svg-main-title-1,
+    svg .svg-main-title-2 {
+      visibility: hidden; } }
 
 @media (min-width: 415px) {
   svg {
@@ -667,11 +696,14 @@ body {
       stroke-dasharray: 450% 450%;
       stroke-width: 1.5px;
       -webkit-animation: stroke-offset-2 5s linear 1s forwards;
-              animation: stroke-offset-2 5s linear 1s forwards; } }
+              animation: stroke-offset-2 5s linear 1s forwards; }
+    svg .svg-main-title-mobile-1,
+    svg .svg-main-title-mobile-2 {
+      visibility: hidden; } }
 
 @-webkit-keyframes stroke-offset-1 {
   0% {
-    stroke-dashoffset: 400%;
+    stroke-dashoffset: 450%;
     stroke: white;
     fill: transparent; }
   50% {
@@ -684,7 +716,7 @@ body {
 
 @keyframes stroke-offset-1 {
   0% {
-    stroke-dashoffset: 400%;
+    stroke-dashoffset: 450%;
     stroke: white;
     fill: transparent; }
   50% {
@@ -697,7 +729,7 @@ body {
 
 @-webkit-keyframes stroke-offset-2 {
   0% {
-    stroke-dashoffset: 450%;
+    stroke-dashoffset: 500%;
     stroke: white;
     fill: transparent; }
   50% {
@@ -710,7 +742,7 @@ body {
 
 @keyframes stroke-offset-2 {
   0% {
-    stroke-dashoffset: 450%;
+    stroke-dashoffset: 500%;
     stroke: white;
     fill: transparent; }
   50% {
