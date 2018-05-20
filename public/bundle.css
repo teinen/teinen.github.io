@@ -537,18 +537,18 @@ body {
 .sec-title {
   margin-left: 5px; }
 
-.sec-contents, .sec-contents-bio, .sec-contents-skill {
+.sec-contents, .sec-contents-bio, .sec-contents-skill, .sec-contents-contact {
   font-size: 3.0rem;
   text-align: center;
   /* title */ }
-  .sec-contents div, .sec-contents-bio div, .sec-contents-skill div {
+  .sec-contents div, .sec-contents-bio div, .sec-contents-skill div, .sec-contents-contact div {
     margin-bottom: 50px; }
-  .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
+  .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title, .sec-contents-contact p.title {
     font-size: 5.0rem;
     font-weight: bold;
     position: relative;
     display: inline-block; }
-  .sec-contents p::after, .sec-contents-bio p::after, .sec-contents-skill p::after {
+  .sec-contents p::after, .sec-contents-bio p::after, .sec-contents-skill p::after, .sec-contents-contact p::after {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -564,10 +564,10 @@ body {
     transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s, -webkit-transform .3s; }
-  .sec-contents p:hover::after, .sec-contents-bio p:hover::after, .sec-contents-skill p:hover::after {
+  .sec-contents p:hover::after, .sec-contents-bio p:hover::after, .sec-contents-skill p:hover::after, .sec-contents-contact p:hover::after {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1); }
-  .sec-contents span, .sec-contents-bio span, .sec-contents-skill span {
+  .sec-contents span, .sec-contents-bio span, .sec-contents-skill span, .sec-contents-contact span {
     display: block; }
 
 .sec-contents-bio table th {
@@ -579,6 +579,22 @@ body {
 .sec-contents-skill span {
   margin-bottom: 10px;
   font-size: 6.5rem; }
+
+.sec-contents-contact {
+  text-align: left; }
+  .sec-contents-contact button {
+    width: 100% !important; }
+
+#go-to-top {
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #F7F9F9;
+  z-index: 3; }
 
 /* --- Flexbox --- */
 .flex-box {
