@@ -9,11 +9,12 @@ const toggleTopNav = () => {
   menuButton.classList.toggle("active");
   topNav.classList.toggle("opened");
 
+  // Add animation to each list item
   for (const key in lists) {
     if (lists.hasOwnProperty(key)) {
-      const li = lists[key];
-      li.classList.toggle("animated");
-      li.classList.toggle("zoomIn");
+      const item = lists[key];
+      item.classList.toggle("animated");
+      item.classList.toggle("zoomIn");
     }
   }
 };

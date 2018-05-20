@@ -41,7 +41,7 @@ h2 {
       font-size: 5rem;
       font-weight: 600;
       &::before, &::after {
-        content: "-";
+        content: "";
       }
     }
     ul {
@@ -82,7 +82,7 @@ h2 {
 
   // open nav
   &.opened {
-    height: 350px;
+    height: 330px;
 
     nav {
       visibility: visible;
@@ -104,10 +104,10 @@ h2 {
   &:hover {
     span {
       &:first-child {
-        transform: translateY(-4px);
+        transform: translateY(-4.5px);
       }
       &:last-child {
-        transform: translateY(4px);
+        transform: translateY(4.5px);
       }
     }
   }
@@ -139,7 +139,6 @@ h2 {
       &:first-child {
         -webkit-transform: translateY(9px) rotate(225deg);
         -moz-transform: translateY(9px) rotate(225deg);
-        -ms-transform: translateY(9px) rotate(225deg);
         transform: translateY(9px) rotate(225deg);
       }
       &:nth-child(2) {
@@ -148,7 +147,6 @@ h2 {
       &:last-child {
         -webkit-transform: translateY(-9px) rotate(135deg);
         -moz-transform: translateY(-9px) rotate(135deg);
-        -ms-transform: translateY(-9px) rotate(135deg);
         transform: translateY(-9px) rotate(135deg);
       }
     }
