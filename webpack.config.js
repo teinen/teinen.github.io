@@ -36,10 +36,7 @@ module.exports = [
         },
         {
           test: /\.js$/,
-          loader: 'babel-loader',
-          options: {
-            presets: ['es2015']
-          }
+          loader: 'babel-loader'
         },
         {
           test: /\.vue$/,
@@ -49,7 +46,22 @@ module.exports = [
           test: /\.css$/,
           use: [
             'vue-style-loader',
-            'css-loader'
+            {
+              loader: 'css-loader',
+              options: {
+                url: false
+              }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  require('autoprefixer')({
+                    browsers: ['last 2 versions']
+                  })
+                ]
+              }
+            }
           ]
         },
         {
