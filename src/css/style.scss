@@ -17,61 +17,6 @@ h2 span {
 }
 
 /* --- Header --- */
-#top-nav {
-  display: block;
-  position: fixed;
-  width: 100vw;
-  height: 60px;
-  background-color: #000000;
-  border-bottom: solid 2px $white;
-  opacity: 0.9;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-  transition: all 0.3s;
-
-  // nav
-  nav {
-    color: $white;
-    text-align: center;
-    visibility: hidden;
-    span {
-      font-size: 5rem;
-      font-weight: 600;
-    }
-    ul {
-      li {
-        display: block;
-        list-style: none;
-        font-size: 3rem;
-        animation-duration: 0.6s;
-        animation-delay: 0.1s;
-        @media (min-width: 1060px) {
-          &:hover {
-            content: "";
-            background-color: $dark-gray;
-          }
-        }
-        a {
-          display: block;
-          color: $white;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
-  // open nav
-  &.opened {
-    height: 330px;
-
-    nav {
-      visibility: visible;
-    }
-  }
-}
-
 #menu-button {
   display: block;
   cursor: pointer;

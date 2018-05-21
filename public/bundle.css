@@ -1,3 +1,54 @@
+
+.top-nav {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  background-color: #000000;
+  border-bottom: solid 2px #F7F9F9;
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.top-nav nav {
+    color: #F7F9F9;
+    text-align: center;
+    visibility: hidden;
+}
+.top-nav nav span {
+      font-size: 5rem;
+      font-weight: 600;
+}
+.top-nav nav ul li {
+      display: block;
+      list-style: none;
+      font-size: 3rem;
+      -webkit-animation-duration: 0.6s;
+              animation-duration: 0.6s;
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s;
+}
+@media (min-width: 1060px) {
+.top-nav nav ul li:hover {
+          content: "";
+          background-color: #424242;
+}
+}
+.top-nav nav ul li a {
+        display: block;
+        color: #F7F9F9;
+        text-decoration: none;
+}
+.top-nav.opened {
+    height: 330px;
+}
+.top-nav.opened nav {
+      visibility: visible;
+}
 /* --- Variables --- */
 /* --- Common Properties --- */
 h2 span {
@@ -12,48 +63,6 @@ h2 span {
       font-size: 9rem; } }
 
 /* --- Header --- */
-#top-nav {
-  display: block;
-  position: fixed;
-  width: 100vw;
-  height: 60px;
-  background-color: #000000;
-  border-bottom: solid 2px #F7F9F9;
-  opacity: 0.9;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-  #top-nav nav {
-    color: #F7F9F9;
-    text-align: center;
-    visibility: hidden; }
-    #top-nav nav span {
-      font-size: 5rem;
-      font-weight: 600; }
-    #top-nav nav ul li {
-      display: block;
-      list-style: none;
-      font-size: 3rem;
-      -webkit-animation-duration: 0.6s;
-              animation-duration: 0.6s;
-      -webkit-animation-delay: 0.1s;
-              animation-delay: 0.1s; }
-      @media (min-width: 1060px) {
-        #top-nav nav ul li:hover {
-          content: "";
-          background-color: #424242; } }
-      #top-nav nav ul li a {
-        display: block;
-        color: #F7F9F9;
-        text-decoration: none; }
-  #top-nav.opened {
-    height: 330px; }
-    #top-nav.opened nav {
-      visibility: visible; }
-
 #menu-button {
   display: block;
   cursor: pointer;
@@ -358,3 +367,5 @@ body {
 @keyframes blink {
   100% {
     opacity: 0; } }
+
+/*# sourceMappingURL=bundle.css.map*/

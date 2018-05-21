@@ -2,7 +2,7 @@
 const toggleTopNav = () => {
   // Get elements
   const menuButton = document.getElementById("menu-button");
-  const topNav = document.getElementById("top-nav");
+  const topNav = document.querySelector('div.top-nav');
   const lists = document.getElementsByTagName("li");
 
   // Toggle class
