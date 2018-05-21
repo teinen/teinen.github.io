@@ -1,17 +1,16 @@
-/* --- Import --- */
-@import "./animate.min.css";
-@import "./skeleton.css";
-@import "./devicons.min.css";
-
 /* --- Variables --- */
 $white:     #F7F9F9;
 $black:     #000000;
 $dark-gray: #424242;
 
 /* --- Common Properties --- */
-h2 {
-  @media (max-width: 414px) {font-size: 6rem;}
-  @media (min-width: 415px) {font-size: 9rem;}
+h2 span {
+  @media (max-width: 414px) {
+    font-size: 6rem;
+  }
+  @media (min-width: 415px) {
+    font-size: 9rem;
+  }
   font-weight: 600 !important;
   margin-top: 80px !important;
 }
