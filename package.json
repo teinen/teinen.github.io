@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
     "autoprefixer": "^8.5.0",
