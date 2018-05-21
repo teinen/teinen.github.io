@@ -10,5 +10,5 @@ import { toggleTopNav } from './modules/toggleTopNav';
 import '../css/style.scss';
 
 window.onload = function() {
-  new Vue(Header).$mount('#nav');
+  new Vue(Header).$mount('#top-nav');
 }

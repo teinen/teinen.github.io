@@ -1,7 +1,7 @@
 // Menu click action
 const toggleTopNav = () => {
   // Get elements
-  const menuButton = document.getElementById("menu-button");
+  const menuButton = document.querySelector('a.menu-button');
   const topNav = document.querySelector('div.top-nav');
   const lists = document.getElementsByTagName("li");
 

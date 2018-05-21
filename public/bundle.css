@@ -49,6 +49,58 @@
 .top-nav.opened nav {
       visibility: visible;
 }
+
+.menu-button {
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+@media (min-width: 1060px) {
+.menu-button:hover span:first-child {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+}
+.menu-button:hover span:last-child {
+      -webkit-transform: translateY(4px);
+              transform: translateY(4px);
+}
+}
+.menu-button span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #F7F9F9;
+    position: absolute;
+    left: 5px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.menu-button span:first-child {
+      top: 10px;
+}
+.menu-button span:nth-child(2) {
+      margin-top: -1px;
+      top: 50%;
+}
+.menu-button span:last-child {
+      bottom: 10px;
+}
+.menu-button.active span:first-child {
+    -webkit-transform: translateY(9px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
+}
+.menu-button.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-button.active span:last-child {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
+}
 /* --- Variables --- */
 /* --- Common Properties --- */
 h2 span {
@@ -61,48 +113,6 @@ h2 span {
   @media (min-width: 415px) {
     h2 span {
       font-size: 9rem; } }
-
-/* --- Header --- */
-#menu-button {
-  display: block;
-  cursor: pointer;
-  width: 50px;
-  height: 40px;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 3; }
-  @media (min-width: 1060px) {
-    #menu-button:hover span:first-child {
-      -webkit-transform: translateY(-4px);
-              transform: translateY(-4px); }
-    #menu-button:hover span:last-child {
-      -webkit-transform: translateY(4px);
-              transform: translateY(4px); } }
-  #menu-button span {
-    display: block;
-    width: 40px;
-    height: 2px;
-    background: #F7F9F9;
-    position: absolute;
-    left: 5px;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
-    #menu-button span:first-child {
-      top: 10px; }
-    #menu-button span:nth-child(2) {
-      margin-top: -1px;
-      top: 50%; }
-    #menu-button span:last-child {
-      bottom: 10px; }
-  #menu-button.active span:first-child {
-    -webkit-transform: translateY(9px) rotate(45deg);
-            transform: translateY(9px) rotate(45deg); }
-  #menu-button.active span:nth-child(2) {
-    opacity: 0; }
-  #menu-button.active span:last-child {
-    -webkit-transform: translateY(-9px) rotate(-45deg);
-            transform: translateY(-9px) rotate(-45deg); }
 
 /* --- Body --- */
 body {
