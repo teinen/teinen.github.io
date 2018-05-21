@@ -1,5 +1,5 @@
-const path = require("path");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require("path")
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = [
   {
@@ -47,7 +47,7 @@ module.exports = [
       new ExtractTextPlugin("bundle.css"),
     ],
     devServer: {
-      host: '0.0.0.0',
+      host: "0.0.0.0",
       port: 8080,
       disableHostCheck: true
     }
