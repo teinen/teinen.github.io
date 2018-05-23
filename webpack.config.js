@@ -1,12 +1,11 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = [
   {
     mode: 'production',
-    entry: './src/app.js',
+    entry: './src/main.js',
     output: {
       filename: 'bundle.js',
       path: path.join(__dirname, './public/')
@@ -65,10 +64,6 @@ module.exports = [
             },
             'sass-loader'
           ]
-        },
-        {
-          test: /\.html$/,
-          loader: 'html-loader'
         },
         {
           test: /\.(png|jpeg|jpg)$/,
