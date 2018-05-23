@@ -1,11 +1,12 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = [
   {
     mode: 'production',
-    entry: './src/js/app.js',
+    entry: './src/app.js',
     output: {
       filename: 'bundle.js',
       path: path.join(__dirname, './public/')
@@ -66,6 +67,10 @@ module.exports = [
           ]
         },
         {
+          test: /\.html$/,
+          loader: 'html-loader'
+        },
+        {
           test: /\.(png|jpeg|jpg)$/,
           loader: 'file-loader'
         },
@@ -78,8 +83,7 @@ module.exports = [
     devtool: 'source-map',
     devServer: {
       host: '0.0.0.0',
-      port: 8080,
-      disableHostCheck: true
+      port: 8080
     },
     plugins: [
       new ExtractTextPlugin('bundle.css'),
