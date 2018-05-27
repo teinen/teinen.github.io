@@ -75,6 +75,9 @@ module.exports = [
         }
       ]
     },
+    resolve: {
+      extensions: ['.js', '.vue', '.scss']
+    },
     devtool: 'source-map',
     devServer: {
       host: '0.0.0.0',
