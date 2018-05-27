@@ -4,6 +4,8 @@
   <title-section></title-section>
   <about-section></about-section>
   <biography-section></biography-section>
+  <skill-section></skill-section>
+  <work-section></work-section>
   <go-to-top-button></go-to-top-button>
 </div>
 </template>
@@ -13,6 +15,8 @@ import HeaderSection from './sections/HeaderSection';
 import TitleSection from './sections/TitleSection';
 import AboutSection from './sections/AboutSection';
 import BiographySection from './sections/BiographySection';
+import SkillSection from './sections/SkillSection';
+import WorkSection from './sections/WorkSection';
 import GoToTopButton from './components/GoToTopButton';
 
 export default {
@@ -21,6 +25,8 @@ export default {
     'title-section': TitleSection,
     'about-section': AboutSection,
     'biography-section': BiographySection,
+    'skill-section': SkillSection,
+    'work-section': WorkSection,
     'go-to-top-button': GoToTopButton,
   }
 }
