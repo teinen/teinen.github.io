@@ -1,8 +1,8 @@
 import Vue from 'vue';
-import App from './App.vue';
+import App from './App';
 import './js/ityped';
 import { toggleTopNav } from './js/toggleTopNav';
-import './css/style.scss';
+import './css/style';
 
 new Vue({
   el: '#app',

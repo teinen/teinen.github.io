@@ -1,20 +1,15 @@
 <template>
-<div>
-  <header>
-    <top-nav></top-nav>
-    <menu-button></menu-button>
-  </header>
-</div>
+  <div>
+    <header-section></header-section>
+  </div>
 </template>
 
 <script>
-import TopNav from './components/TopNav.vue';
-import ToggleMenuButton from './components/ToggleMenuButton.vue';
+import HeaderSection from './sections/HeaderSection';
 
 export default {
   components: {
-    'top-nav': TopNav,
-    'menu-button': ToggleMenuButton
+    'header-section': HeaderSection
   }
 }
 </script>
