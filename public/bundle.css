@@ -1,4 +1,55 @@
 
+.top-nav[data-v-4b406190] {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  background-color: #000000;
+  border-bottom: solid 2px #F7F9F9;
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.top-nav nav[data-v-4b406190] {
+    color: #F7F9F9;
+    text-align: center;
+    visibility: hidden;
+}
+.top-nav nav span[data-v-4b406190] {
+      font-size: 5rem;
+      font-weight: 600;
+}
+.top-nav nav ul li[data-v-4b406190] {
+      display: block;
+      list-style: none;
+      font-size: 3rem;
+      -webkit-animation-duration: 0.6s;
+              animation-duration: 0.6s;
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s;
+}
+@media (min-width: 1060px) {
+.top-nav nav ul li[data-v-4b406190]:hover {
+          content: "";
+          background-color: #424242;
+}
+}
+.top-nav nav ul li a[data-v-4b406190] {
+        display: block;
+        color: #F7F9F9;
+        text-decoration: none;
+}
+.top-nav.opened[data-v-4b406190] {
+    height: 330px;
+}
+.top-nav.opened nav[data-v-4b406190] {
+      visibility: visible;
+}
+
 .menu-button {
   display: block;
   cursor: pointer;
@@ -49,57 +100,6 @@
 .menu-button.active span:last-child {
     -webkit-transform: translateY(-9px) rotate(-45deg);
             transform: translateY(-9px) rotate(-45deg);
-}
-
-.top-nav[data-v-4b406190] {
-  display: block;
-  position: fixed;
-  width: 100vw;
-  height: 60px;
-  background-color: #000000;
-  border-bottom: solid 2px #F7F9F9;
-  opacity: 0.9;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.top-nav nav[data-v-4b406190] {
-    color: #F7F9F9;
-    text-align: center;
-    visibility: hidden;
-}
-.top-nav nav span[data-v-4b406190] {
-      font-size: 5rem;
-      font-weight: 600;
-}
-.top-nav nav ul li[data-v-4b406190] {
-      display: block;
-      list-style: none;
-      font-size: 3rem;
-      -webkit-animation-duration: 0.6s;
-              animation-duration: 0.6s;
-      -webkit-animation-delay: 0.1s;
-              animation-delay: 0.1s;
-}
-@media (min-width: 1060px) {
-.top-nav nav ul li[data-v-4b406190]:hover {
-          content: "";
-          background-color: #424242;
-}
-}
-.top-nav nav ul li a[data-v-4b406190] {
-        display: block;
-        color: #F7F9F9;
-        text-decoration: none;
-}
-.top-nav.opened[data-v-4b406190] {
-    height: 330px;
-}
-.top-nav.opened nav[data-v-4b406190] {
-      visibility: visible;
 }
 /* --- Variables --- */
 /* --- Common Properties --- */
