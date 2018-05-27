@@ -1,8 +1,8 @@
 <template>
-  <header>
-    <top-nav></top-nav>
-    <menu-button></menu-button>
-  </header>
+<header>
+  <top-nav></top-nav>
+  <menu-button></menu-button>
+</header>
 </template>
 
 <script>
@@ -16,7 +16,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

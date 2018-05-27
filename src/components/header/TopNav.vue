@@ -1,20 +1,20 @@
 <template>
-  <div class="top-nav">
-    <nav>
-      <span>Contents</span>
-      <ul>
-        <li v-for="item in items" :key="item.id">
-          <a
-            data-scroll
-            v-bind:href=item.link
-            onclick='toggleTopNav();'
-          >
-            {{ item.title }}
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+<div class="top-nav">
+  <nav>
+    <span>Contents</span>
+    <ul>
+      <li v-for="item in items" :key="item.id">
+        <a
+          data-scroll
+          v-bind:href=item.link
+          onclick='toggleTopNav();'
+        >
+          {{ item.title }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
 </template>
 
 <script>
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $white:     #F7F9F9;
 $black:     #000000;
 $dark-gray: #424242;

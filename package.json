@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --hot --inline"
   },
   "dependencies": {
     "vue": "^2.5.16"
