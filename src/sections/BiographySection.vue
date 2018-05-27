@@ -1,22 +1,18 @@
 <template>
-<section id="about">
+<section id="biography">
   <div class="flex-box flex-column top">
-    <h2><span>About</span></h2>
+    <h2><span>Biography</span></h2>
     <contents></contents>
   </div>
 </section>
 </template>
 
 <script>
-import Contents from '../components/about/Contents';
+import Contents from '../components/biography/Contents';
 
 export default {
   components: {
-    'contents': Contents
+    'contents': Contents,
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

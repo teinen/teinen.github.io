@@ -1,3 +1,174 @@
+/* --- Common Properties --- */
+h2 span {
+  display: block;
+  font-weight: 600 !important;
+  margin-top: 80px !important;
+}
+@media (max-width: 414px) {
+h2 span {
+      font-size: 6rem;
+}
+}
+@media (min-width: 415px) {
+h2 span {
+      font-size: 9rem;
+}
+}
+
+/* --- Body --- */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url(./images/portfolio-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+@media screen and (max-width: 414px) {
+body {
+      background-image: none;
+      background-color: #000000;
+}
+}
+body section {
+    color: #F7F9F9;
+}
+.sec-contents, .sec-contents-bio, .sec-contents-skill {
+  text-align: center;
+  /* title */
+}
+@media (max-width: 414px) {
+.sec-contents, .sec-contents-bio, .sec-contents-skill {
+      font-size: 2rem;
+}
+}
+@media (min-width: 415px) {
+.sec-contents, .sec-contents-bio, .sec-contents-skill {
+      font-size: 3rem;
+}
+}
+.sec-contents div, .sec-contents-bio div, .sec-contents-skill div {
+    margin-bottom: 50px;
+}
+.sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+@media (max-width: 414px) {
+.sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
+        font-size: 3rem;
+}
+}
+@media (min-width: 415px) {
+.sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
+        font-size: 4rem;
+}
+}
+.sec-contents p::after, .sec-contents-bio p::after, .sec-contents-skill p::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: #F7F9F9;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+.sec-contents p:hover::after, .sec-contents-bio p:hover::after, .sec-contents-skill p:hover::after {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+}
+.sec-contents span, .sec-contents-bio span, .sec-contents-skill span {
+    display: block;
+}
+@media (max-width: 414px) {
+.sec-contents-bio table th {
+    font-size: 2.5rem;
+}
+}
+@media (min-width: 415px) {
+.sec-contents-bio table th {
+    font-size: 3rem;
+}
+}
+@media (max-width: 414px) {
+.sec-contents-bio table td {
+    font-size: 2rem;
+}
+}
+@media (min-width: 415px) {
+.sec-contents-bio table td {
+    font-size: 2.5rem;
+}
+}
+.sec-contents-skill span {
+  margin-bottom: 10px;
+}
+@media (max-width: 414px) {
+.sec-contents-skill span {
+      font-size: 5.5rem;
+}
+}
+@media (min-width: 415px) {
+.sec-contents-skill span {
+      font-size: 6.5rem;
+}
+}
+.flex-box {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex-box.center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.flex-box.top {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+.flex-box.flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.flex-box .flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+/* --- Variables --- */
+#go-to-top {
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #F7F9F9;
+  z-index: 3; }
 
 .top-nav[data-v-4b406190] {
   display: block;
@@ -101,145 +272,6 @@
     -webkit-transform: translateY(-9px) rotate(-45deg);
             transform: translateY(-9px) rotate(-45deg);
 }
-/* --- Variables --- */
-/* --- Common Properties --- */
-h2 span {
-  display: block;
-  font-weight: 600 !important;
-  margin-top: 80px !important; }
-  @media (max-width: 414px) {
-    h2 span {
-      font-size: 6rem; } }
-  @media (min-width: 415px) {
-    h2 span {
-      font-size: 9rem; } }
-
-/* --- Body --- */
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-image: url(./images/portfolio-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  z-index: 0; }
-  @media screen and (max-width: 414px) {
-    body {
-      background-image: none;
-      background-color: #000000; } }
-  body section {
-    color: #F7F9F9; }
-
-.sec-contents, .sec-contents-bio, .sec-contents-skill {
-  text-align: center;
-  /* title */ }
-  @media (max-width: 414px) {
-    .sec-contents, .sec-contents-bio, .sec-contents-skill {
-      font-size: 2rem; } }
-  @media (min-width: 415px) {
-    .sec-contents, .sec-contents-bio, .sec-contents-skill {
-      font-size: 3rem; } }
-  .sec-contents div, .sec-contents-bio div, .sec-contents-skill div {
-    margin-bottom: 50px; }
-  .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
-    font-weight: bold;
-    position: relative;
-    display: inline-block; }
-    @media (max-width: 414px) {
-      .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
-        font-size: 3rem; } }
-    @media (min-width: 415px) {
-      .sec-contents p.title, .sec-contents-bio p.title, .sec-contents-skill p.title {
-        font-size: 4rem; } }
-  .sec-contents p::after, .sec-contents-bio p::after, .sec-contents-skill p::after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 3px;
-    background: #F7F9F9;
-    -webkit-transform: scale(0, 1);
-            transform: scale(0, 1);
-    -webkit-transform-origin: center top;
-            transform-origin: center top;
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s; }
-  .sec-contents p:hover::after, .sec-contents-bio p:hover::after, .sec-contents-skill p:hover::after {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1); }
-  .sec-contents span, .sec-contents-bio span, .sec-contents-skill span {
-    display: block; }
-
-@media (max-width: 414px) {
-  .sec-contents-bio table th {
-    font-size: 2.5rem; } }
-
-@media (min-width: 415px) {
-  .sec-contents-bio table th {
-    font-size: 3rem; } }
-
-@media (max-width: 414px) {
-  .sec-contents-bio table td {
-    font-size: 2rem; } }
-
-@media (min-width: 415px) {
-  .sec-contents-bio table td {
-    font-size: 2.5rem; } }
-
-.sec-contents-skill span {
-  margin-bottom: 10px; }
-  @media (max-width: 414px) {
-    .sec-contents-skill span {
-      font-size: 5.5rem; } }
-  @media (min-width: 415px) {
-    .sec-contents-skill span {
-      font-size: 6.5rem; } }
-
-#go-to-top {
-  display: block;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  color: #F7F9F9;
-  z-index: 3; }
-
-/* --- Flexbox --- */
-.flex-box {
-  width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .flex-box.center {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .flex-box.top {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start; }
-  .flex-box.flex-column {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .flex-box .flex-row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
 
 @media (max-width: 414px) {
 svg[data-v-6fd2e1b0] {
