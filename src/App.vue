@@ -4,6 +4,7 @@
   <title-section></title-section>
   <about-section></about-section>
   <biography-section></biography-section>
+  <go-to-top-button></go-to-top-button>
 </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderSection from './sections/HeaderSection';
 import TitleSection from './sections/TitleSection';
 import AboutSection from './sections/AboutSection';
 import BiographySection from './sections/BiographySection';
+import GoToTopButton from './components/GoToTopButton';
 
 export default {
   components: {
@@ -19,6 +21,7 @@ export default {
     'title-section': TitleSection,
     'about-section': AboutSection,
     'biography-section': BiographySection,
+    'go-to-top-button': GoToTopButton,
   }
 }
 </script>

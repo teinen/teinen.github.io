@@ -1,5 +1,4 @@
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
@@ -14,28 +13,6 @@ module.exports = [
     module: {
       rules: [
         {
-          test: /\.scss$/,
-          loader: ExtractTextPlugin.extract({
-            fallback: 'style-loader',
-            use: [
-              {
-                loader: 'css-loader',
-                options: { url: false }
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  plugins: [
-                    require('autoprefixer')({
-                      browsers: ['last 2 versions']
-                    })
-                  ]
-                }
-              },
-              'sass-loader']
-          })
-        },
-        {
           test: /\.js$/,
           exclude: /node_modules/,
           loader: 'babel-loader'
@@ -45,7 +22,7 @@ module.exports = [
           loader: 'vue-loader',
         },
         {
-          test: /\.css$/,
+          test: /\.scss$/,
           use: [
             'vue-style-loader',
             {
@@ -78,7 +55,7 @@ module.exports = [
       ]
     },
     resolve: {
-      extensions: ['.js', '.vue', '.scss']
+      extensions: ['.js', '.vue']
     },
     devtool: 'source-map',
     devServer: {
@@ -87,7 +64,6 @@ module.exports = [
       port: 8080
     },
     plugins: [
-      new ExtractTextPlugin('bundle.css'),
       new HtmlWebpackPlugin({
         template: "./index.html"
       }),
