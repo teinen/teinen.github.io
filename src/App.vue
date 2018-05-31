@@ -1,6 +1,6 @@
 <template>
 <div>
-  <header-section></header-section>
+  <header-component></header-component>
   <title-section></title-section>
   <about-section></about-section>
   <biography-section></biography-section>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import HeaderSection from './sections/HeaderSection';
+import Header from './sections/Header';
 import TitleSection from './sections/TitleSection';
 import AboutSection from './sections/AboutSection';
 import BiographySection from './sections/BiographySection';
@@ -21,7 +21,7 @@ import GoToTopButton from './components/GoToTopButton';
 
 export default {
   components: {
-    'header-section': HeaderSection,
+    'header-component': Header,
     'title-section': TitleSection,
     'about-section': AboutSection,
     'biography-section': BiographySection,
