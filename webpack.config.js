@@ -57,6 +57,10 @@ module.exports = [
     resolve: {
       extensions: ['.js', '.vue']
     },
+    performance: {
+      maxEntrypointSize: 1000000,
+      maxAssetSize: 1000000
+    },
     devtool: 'source-map',
     devServer: {
       contentBase: path.join(__dirname, './public/'),
