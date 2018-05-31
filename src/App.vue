@@ -55,7 +55,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-image: url(./images/portfolio-bg.jpg);
+  background-image: url(./public/images/portfolio-bg.jpg);
   @media screen and (max-width: 414px) {
     background-image: none;
     background-color: $black;
