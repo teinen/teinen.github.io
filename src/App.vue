@@ -55,16 +55,25 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-image: url(./public/images/portfolio-bg.jpg);
-  @media screen and (max-width: 414px) {
-    background-image: none;
-    background-color: $black;
-  }
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(./public/images/portfolio-bg.jpg) center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   z-index: 0;
+
+  @media only screen and (max-width: 414px) {
+    &::before {
+    content: "";
+    background: url(./public/images/portfolio-bg.jpg) center center no-repeat;
+    background-size: cover;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    }
+  }
 
   section {
     color: $white;
