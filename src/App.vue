@@ -55,7 +55,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-image: url(./public/images/portfolio-bg.jpg) center center no-repeat;
+  background-image: url(./public/images/portfolio-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
   z-index: 0;
@@ -63,7 +65,9 @@ body {
   @media only screen and (max-width: 414px) {
     &::before {
     content: "";
-    background: url(./public/images/portfolio-bg.jpg) center center no-repeat;
+    background: url(./public/images/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: block;
     position: fixed;
