@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Contents from '../components/skill/Contents';
+import Contents from '@/components/skill/Contents';
 
 export default {
   components: {

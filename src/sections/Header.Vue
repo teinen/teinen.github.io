@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import TopNav from '../components/header/TopNav';
-import ToggleMenuButton from '../components/header/ToggleMenuButton';
+import TopNav from '@/components/header/TopNav';
+import ToggleMenuButton from '@/components/header/ToggleMenuButton';
 
 export default {
   components: {

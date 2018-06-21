@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import MainTitle from '../components/title/MainTitle';
-import SubTitle from '../components/title/SubTitle';
+import MainTitle from '@/components/title/MainTitle';
+import SubTitle from '@/components/title/SubTitle';
 
 export default {
   components: {

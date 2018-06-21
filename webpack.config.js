@@ -54,11 +54,13 @@ module.exports = [
       ]
     },
     resolve: {
-      extensions: ['.js', '.vue']
+      extensions: ['.js', '.vue'],
+      alias: {
+        '@': path.resolve(__dirname, 'src/')
+      }
     },
     performance: {
-      maxEntrypointSize: 1000000,
-      maxAssetSize: 1000000
+      hints: false
     },
     devServer: {
       host: '0.0.0.0',

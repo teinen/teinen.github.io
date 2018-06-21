@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Contents from '../components/biography/Contents';
+import Contents from '@/components/biography/Contents';
 
 export default {
   components: {
