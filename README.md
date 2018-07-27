@@ -1,29 +1,48 @@
-# What's this?
+# teinen's portfolio site
+
+## What's this
+
 This is my portfolio site.
 
-# Architecture
-## Language
+## Architecture
+
+### Language
+
 * HTML 5
 * CSS 3
 * JavaScript
 
-## Framework
+### Framework
+
 * Vue.js
 
-## Library
+### Library
+
 * Skeleton.css
 * Animate.css
 * wow.js
 
-## Preprocessor
+### Preprocessor
+
 * Sass
 * Babel
 
-## Build
+### Build
+
 * webpack
 
-## Server
+### Server
+
 * webpack-dev-server
 
-## Package management
+### Package management
+
 * Yarn
+
+## License
+
+MIT license
+
+## Author
+
+Akira Kanno (teinen)
