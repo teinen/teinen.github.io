@@ -1,8 +1,11 @@
-# node_modules
+# dependencies
 node_modules
 
-# for mac
+# Nuxt build
+.nuxt
+
+# only mac
 .DS_Store
 
-# logfiles
+# logs
 *.log
