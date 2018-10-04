@@ -1,48 +1,23 @@
-# teinen's portfolio site
+# {{ name }}
 
-## What's this
+> {{ description }}
 
-This is my portfolio site.
+## Build Setup
 
-## Architecture
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-### Language
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-* HTML 5
-* CSS 3
-* JavaScript
+# build for production and launch server
+$ npm run build
+$ npm start
 
-### Framework
+# generate static project
+$ npm run generate
+```
 
-* Vue.js
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
-### Library
-
-* Skeleton.css
-* Animate.css
-* wow.js
-
-### Preprocessor
-
-* Sass
-* Babel
-
-### Build
-
-* webpack
-
-### Server
-
-* webpack-dev-server
-
-### Package management
-
-* Yarn
-
-## License
-
-MIT license
-
-## Author
-
-Akira Kanno (teinen)
