@@ -1,23 +1,34 @@
-# {{ name }}
+# teinen.github.io
 
-> {{ description }}
+## Description
 
-## Build Setup
+My portfolio page.
+
+* Using Nuxt.js
+* Support PWA
+* Designed with pure css(not using css library)
+
+## Usage
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn dev
 
 # build for production and launch server
-$ npm run build
-$ npm start
+$ yarn build
+$ yarn start
 
 # generate static project
-$ npm run generate
+$ yarn generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## LICENSE
 
+[MIT License](https://opensource.org/licenses/MIT)
+
+## Author
+
+Akira Kanno(teinen)
