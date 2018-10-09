@@ -21,6 +21,7 @@ footer {
   height: 75px;
   border-top: solid 2px #000;
   position: relative;
+  // background-color: rgb(255, 255, 255);
   bottom: 0;
   justify-content: center;
   align-items: center;

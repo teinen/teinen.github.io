@@ -18,9 +18,9 @@ export default {
 header {
   display: flex;
   width: 100vw;
-  height: 100px;
-  position: relative;
-  background-color: #000;
+  height: 80px;
+  position: fixed;
+  background-color: rgb(50, 50, 50);
   top: 0;
   justify-content: center;
   align-items: center;
