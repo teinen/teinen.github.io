@@ -14,8 +14,8 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: [ '@nuxtjs/pwa' ],
   build: {
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend(config) {
+      if (process.server && process.browser) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
