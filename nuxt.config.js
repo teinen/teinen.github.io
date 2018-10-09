@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'spa',
   head: {
     title: 'teinen.github.io',
     htmlAttrs: { lang: 'ja' },
