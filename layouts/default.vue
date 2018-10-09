@@ -1,26 +1,30 @@
 <template>
   <div>
     <div class="main">
-      <header>
-        <span class="title">teinen.github.io</span>
-      </header>
+      <header-component></header-component>
 
       <div class="container">
         <nuxt/>
       </div>
 
-      <footer>
-        <span class="copyright">© 2018 Akira Kanno</span>
-      </footer>
+      <footer-component></footer-component>
     </div>
   </div>
 </template>
 
-<style lang="scss">
-/* Varibles */
-$black: #000;
-$white: #fff;
+<script>
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
+export default {
+  components: {
+    'header-component': Header,
+    'footer-component': Footer,
+  }
+}
+</script>
+
+<style lang="scss">
 /* General style */
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -41,34 +45,5 @@ html {
 /* Main style */
 .main {
   height: 100vh;
-}
-
-/* Header style */
-header {
-  display: flex;
-  width: 100vw;
-  height: 100px;
-  position: relative;
-  background-color: $black;
-  top: 0;
-  justify-content: center;
-  align-items: center;
-
-  .title {
-    color: $white;
-    font-size: 3em;
-  }
-}
-
-/* Footer style */
-footer {
-  display: flex;
-  width: 100vw;
-  height: 75px;
-  border-top: solid 2px $black;
-  position: relative;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
 }
 </style>
