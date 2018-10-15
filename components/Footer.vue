@@ -37,7 +37,7 @@ footer {
   color: #ffffff;
   font-weight: bold;
   border-top: solid 10px #6E777C;
-  position: relative;
+  position: fixed;
   background-color: #454C50;
   bottom: 0;
 }

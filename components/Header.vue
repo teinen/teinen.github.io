@@ -8,7 +8,7 @@
 export default {
   data () {
     return {
-      title: 'teinen.github.io'
+      title: 'teinen.github.io',
     }
   }
 }
@@ -19,6 +19,7 @@ header {
   display: flex;
   width: 100vw;
   height: 110px;
+  padding: 0 20px;
   position: fixed;
   background-color: #28385E;
   border-bottom: 10px solid #516C8D;
@@ -31,11 +32,5 @@ header {
 .title {
   color: #ffffff;
   font-size: 3.0em;
-  margin-left: 25px;
-
-  &::before {
-    content: '/';
-    margin-right: 5px;
-  }
 }
 </style>
