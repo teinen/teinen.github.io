@@ -19,9 +19,11 @@ footer {
   display: flex;
   width: 100vw;
   height: 100px;
-  border-top: solid 2px #000;
+  color: #ffffff;
+  font-weight: bold;
+  border-top: solid 10px #6E777C;
   position: relative;
-  background-color: #DEDEDE;
+  background-color: #454C50;
   bottom: 0;
   justify-content: center;
   align-items: center;

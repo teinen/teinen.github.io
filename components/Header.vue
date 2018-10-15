@@ -32,5 +32,10 @@ header {
   color: #ffffff;
   font-size: 3.0em;
   margin-left: 25px;
+
+  &::before {
+    content: '/';
+    margin-right: 5px;
+  }
 }
 </style>
