@@ -18,16 +18,19 @@ export default {
 header {
   display: flex;
   width: 100vw;
-  height: 80px;
+  height: 110px;
   position: fixed;
-  background-color: rgb(50, 50, 50);
+  background-color: #28385E;
+  border-bottom: 10px solid #516C8D;
   top: 0;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 
-  .title {
-    color: #fff;
-    font-size: 3em;
-  }
+}
+
+.title {
+  color: #ffffff;
+  font-size: 3.0em;
+  margin-left: 25px;
 }
 </style>

@@ -18,10 +18,10 @@ export default {
 footer {
   display: flex;
   width: 100vw;
-  height: 75px;
+  height: 100px;
   border-top: solid 2px #000;
   position: relative;
-  // background-color: rgb(255, 255, 255);
+  background-color: #DEDEDE;
   bottom: 0;
   justify-content: center;
   align-items: center;

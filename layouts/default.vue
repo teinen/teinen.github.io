@@ -25,9 +25,14 @@ export default {
 </script>
 
 <style lang="scss">
-/* General style */
+@font-face {
+  font-family: SmartFont;
+  font-style: normal;
+  src: url('/fonts/smart-font-ui.otf')
+}
+
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: SmartFont, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -35,7 +40,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: rgb(235, 235, 235);
+  background-color: #DEDEDE;
 }
 
 *, *:before, *:after {
@@ -46,5 +51,14 @@ html {
 /* Main style */
 .main {
   height: 100vh;
+}
+
+/* main container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 </style>
