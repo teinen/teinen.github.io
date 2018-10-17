@@ -33,7 +33,6 @@ export default {
 
 html {
   font-family: SmartFont, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -55,10 +54,13 @@ html {
 
 /* main container */
 .container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  max-width: 70vw;
+  margin: 0 auto;
   min-height: 100vh;
-  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    max-width: 100vw;
+    margin: 0 20px;
+  }
 }
 </style>
