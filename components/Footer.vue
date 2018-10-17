@@ -28,18 +28,18 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100px;
-  color: #ffffff;
-  font-weight: bold;
-  border-top: solid 10px #6E777C;
-  position: fixed;
   background-color: #454C50;
+  border-top: solid 10px #6E777C;
   bottom: 0;
+  color: #ffffff;
+  display: flex;
+  font-weight: bold;
+  flex-flow: column nowrap;
+  height: 100px;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
 }
 
 .social {

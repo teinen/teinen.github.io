@@ -55,10 +55,10 @@ html {
 
 /* main container */
 .container {
-  min-height: 100vh;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  min-height: 100vh;
   text-align: center;
 }
 </style>

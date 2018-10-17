@@ -16,17 +16,16 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  display: flex;
-  width: 100vw;
-  height: 110px;
-  padding: 0 20px;
-  position: fixed;
+  align-items: center;
   background-color: #28385E;
   border-bottom: 10px solid #516C8D;
-  top: 0;
+  display: flex;
+  height: 110px;
   justify-content: start;
-  align-items: center;
-
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .title {
