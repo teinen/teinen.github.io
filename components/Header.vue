@@ -4,10 +4,10 @@
 
     <nav>
       <ul>
-        <li><router-link to="#">ABOUT</router-link></li>
-        <li><router-link to="#">SKILL</router-link></li>
-        <li><router-link to="#">CAREER</router-link></li>
-        <li><router-link to="#">WORK</router-link></li>
+        <li><router-link to="/about">ABOUT</router-link></li>
+        <li><router-link to="/skill">SKILL</router-link></li>
+        <li><router-link to="/career">CAREER</router-link></li>
+        <li><router-link to="/work">WORK</router-link></li>
       </ul>
     </nav>
   </header>
@@ -78,6 +78,18 @@ nav {
       a {
         color: #ffffff;
         text-decoration: none;
+
+        &::after {
+          border-bottom: 2px solid #ffffff;
+          content: '';
+          display: block;
+          transition: all .3s;
+          width: 0;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
   }
