@@ -49,14 +49,13 @@ html {
 
 /* Main style */
 .main {
-  height: 100vh;
+  height: calc(100vh - 120px);
 }
 
 /* main container */
 .container {
   max-width: 70vw;
   margin: 0 auto;
-  min-height: 100vh;
 
   @media screen and (max-width: 480px) {
     max-width: 100vw;

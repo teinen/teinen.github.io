@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="card">
-      card
+      card content
     </div>
   </section>
 </template>
@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  height: 100vh;
+  height: 100%;
   margin: 120px 0;
 }
 
@@ -22,6 +22,7 @@ section {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
-  height: 500px;
+  height: calc(100vh - 240px);
+  padding: 20px;
 }
 </style>
