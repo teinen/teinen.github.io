@@ -49,12 +49,12 @@ html {
 
 /* Main style */
 .main {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
 }
 
 /* main container */
 .container {
-  max-width: 70vw;
+  max-width: 60vw;
   margin: 0 auto;
 
   @media screen and (max-width: 480px) {
@@ -66,14 +66,14 @@ html {
 /* contents */
 section {
   height: 100%;
-  margin: 120px 0;
+  margin: 100px 0;
 }
 
 .card {
   background: #fff;
   border-radius: 3px;
   box-shadow: 0 2px 5px #ccc;
-  height: calc(100vh - 240px);
+  height: calc(100vh - 200px);
   padding: 20px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }

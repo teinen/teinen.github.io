@@ -9,10 +9,14 @@
         </li>
       </ul>
     </nav>
+
+    <top-nav-button></top-nav-button>
   </header>
 </template>
 
 <script>
+import TopNavButton from '@/components/TopNavButton'
+
 export default {
   data () {
     return {
@@ -25,7 +29,9 @@ export default {
       ]
     }
   },
-
+  components: {
+    'top-nav-button': TopNavButton
+  }
 }
 </script>
 
@@ -43,8 +49,7 @@ header {
   width: 100vw;
 
   @media screen and (min-width: 480px) {
-    border-bottom: 10px solid #516C8D;
-    height: 100px;
+
   }
 
   @media screen and (min-width: 960px) {
@@ -56,12 +61,8 @@ header {
   color: #ffffff;
   font-size: 1.5em;
 
-  @media screen and (min-width: 480px) and (max-width: 960px) {
-    font-size: 2.0em;
-  }
-
   @media screen and (min-width: 960px) {
-    font-size: 2.5em;
+    font-size: 2.0em;
   }
 }
 

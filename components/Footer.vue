@@ -30,19 +30,19 @@ export default {
 footer {
   align-items: center;
   background-color: #454C50;
-  border-top: solid 10px #6E777C;
+  border-top: solid 8px #6E777C;
   bottom: 0;
   color: #ffffff;
   display: flex;
   font-weight: bold;
   flex-flow: column nowrap;
-  height: 100px;
+  height: 80px;
   justify-content: center;
   position: absolute;
   width: 100vw;
 }
 
 .social {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 </style>
