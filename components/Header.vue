@@ -4,7 +4,7 @@
 
     <nav>
       <ul>
-        <li><router-link to="/about">ABOUT</router-link></li>
+        <li><router-link to="/">ABOUT</router-link></li>
         <li><router-link to="/skill">SKILL</router-link></li>
         <li><router-link to="/career">CAREER</router-link></li>
         <li><router-link to="/work">WORK</router-link></li>
