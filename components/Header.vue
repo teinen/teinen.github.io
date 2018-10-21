@@ -4,10 +4,9 @@
 
     <nav>
       <ul>
-        <li><router-link to="/">ABOUT</router-link></li>
-        <li><router-link to="/skill">SKILL</router-link></li>
-        <li><router-link to="/career">CAREER</router-link></li>
-        <li><router-link to="/work">WORK</router-link></li>
+        <li v-for="(v, i) in headerContents" :key="i">
+          <router-link :to=v.url>{{ v.title }}</router-link>
+        </li>
       </ul>
     </nav>
   </header>
@@ -18,6 +17,12 @@ export default {
   data () {
     return {
       title: 'teinen.github.io',
+      headerContents: [
+        { title: 'ABOUT', url: '/'},
+        { title: 'SKILL', url: '/skill'},
+        { title: 'CAREER', url: '/career'},
+        { title: 'WORK', url: '/work'},
+      ]
     }
   }
 }
