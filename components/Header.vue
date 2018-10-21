@@ -24,7 +24,8 @@ export default {
         { title: 'WORK', url: '/work'},
       ]
     }
-  }
+  },
+
 }
 </script>
 
@@ -64,6 +65,14 @@ header {
   }
 }
 
+/* navigation */
+@mixin active-link($width: 0) {
+  border-bottom: 2px solid #ffffff;
+  content: '';
+  display: block;
+  width: $width;
+}
+
 nav {
   font-size: 1.5em;
   position: absolute;
@@ -85,11 +94,8 @@ nav {
         text-decoration: none;
 
         &::after {
-          border-bottom: 2px solid #ffffff;
-          content: '';
-          display: block;
+          @include active-link();
           transition: all .3s;
-          width: 0;
         }
 
         &:hover::after {
@@ -97,6 +103,13 @@ nav {
         }
       }
     }
+  }
+}
+
+/* active link */
+.nuxt-link-exact-active {
+  &::after {
+    @include active-link(100%);
   }
 }
 </style>

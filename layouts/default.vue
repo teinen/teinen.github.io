@@ -71,7 +71,7 @@ section {
 
 .card {
   background: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0 2px 5px #ccc;
   height: calc(100vh - 240px);
   padding: 20px;
