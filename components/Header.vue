@@ -101,15 +101,15 @@ nav {
         &:hover::after {
           width: 100%;
         }
+
+        /* active link */
+        &.nuxt-link-exact-active {
+          &::after {
+            @include active-link(100%);
+          }
+        }
       }
     }
-  }
-}
-
-/* active link */
-.nuxt-link-exact-active {
-  &::after {
-    @include active-link(100%);
   }
 }
 </style>
