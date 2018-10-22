@@ -59,10 +59,10 @@ header {
 
 .title {
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.8em;
 
   @media screen and (min-width: 960px) {
-    font-size: 2.0em;
+    font-size: 2.3em;
   }
 }
 
