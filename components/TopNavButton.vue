@@ -11,63 +11,50 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-$white:     #F7F9F9;
-$black:     #000000;
-$dark-gray: #424242;
-
 /* top navi for mobile */
-@media screen and (max-width: 960px) {
-  .menu-button {
+.menu-button {
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
+
+  display: block;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 3;
+
+  span {
     display: block;
-    cursor: pointer;
-    width: 50px;
-    height: 40px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 3;
-    @media (min-width: 1060px) {
-      &:hover {
-        span {
-          &:first-child {
-            transform: translateY(-4px);
-          }
-          &:last-child {
-            transform: translateY(4px);
-          }
-        }
-      }
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 5px;
+    transition: all 0.2s;
+    &:first-child {
+      top: 10px;
     }
+    &:nth-child(2) {
+      margin-top: -1.5px;
+      top: 50%;
+    }
+    &:last-child {
+      bottom: 10px;
+    }
+  }
+  &.active {
     span {
-      display: block;
-      width: 40px;
-      height: 2px;
-      background: $white;
-      position: absolute;
-      left: 5px;
-      transition: all 0.2s;
       &:first-child {
-        top: 10px;
+        transform: translateY(9px) rotate(45deg);
       }
       &:nth-child(2) {
-        margin-top: -1px;
-        top: 50%;
+        opacity: 0;
       }
       &:last-child {
-        bottom: 10px;
-      }
-    }
-    &.active {
-      span {
-        &:first-child {
-          transform: translateY(9px) rotate(45deg);
-        }
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        &:last-child {
-          transform: translateY(-9px) rotate(-45deg);
-        }
+        transform: translateY(-9px) rotate(-45deg);
       }
     }
   }

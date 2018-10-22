@@ -48,10 +48,7 @@ header {
   top: 0;
   width: 100vw;
 
-  @media screen and (min-width: 480px) {
-
-  }
-
+  /* Title position for PC */
   @media screen and (min-width: 960px) {
     justify-content: start;
   }
@@ -61,6 +58,12 @@ header {
   color: #ffffff;
   font-size: 1.8em;
 
+  /* For small display (e.g. iPhone SE) */
+  @media screen and (max-width: 320px) {
+    font-size: 1.5em;
+  }
+
+  /* For tablet */
   @media screen and (min-width: 960px) {
     font-size: 2.3em;
   }
@@ -78,6 +81,10 @@ nav {
   font-size: 1.5em;
   position: absolute;
   right: 60px;
+
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
 
   ul {
     align-items: flex-end;
