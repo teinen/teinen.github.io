@@ -2,6 +2,7 @@
   <header>
     <span class="title">{{ title }}</span>
 
+    <!-- Normal header -->
     <nav>
       <ul>
         <li v-for="(v, i) in headerContents" :key="i">
@@ -10,12 +11,13 @@
       </ul>
     </nav>
 
+    <!-- Toggle nav button for tablet/mobile -->
     <top-nav-button></top-nav-button>
   </header>
 </template>
 
 <script>
-import TopNavButton from '@/components/TopNavButton'
+import TopNavButton from '@/components/atomic/TopNavButton'
 
 export default {
   data () {
@@ -47,27 +49,35 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
+  transition: height 0.3s;
 
   /* Title position for PC */
   @media screen and (min-width: 960px) {
     justify-content: start;
   }
-}
 
-.title {
-  color: #ffffff;
-  font-size: 1.8em;
-
-  /* For small display (e.g. iPhone SE) */
-  @media screen and (max-width: 320px) {
-    font-size: 1.5em;
+  /* When open for tablet/mobile */
+  &.active {
+    border-bottom: 8px solid #516C8D;
+    height: 130px;
   }
 
-  /* For tablet */
-  @media screen and (min-width: 960px) {
-    font-size: 2.3em;
+  .title {
+    color: #ffffff;
+    font-size: 1.8em;
+
+    /* For small display (e.g. iPhone SE) */
+    @media screen and (max-width: 320px) {
+      font-size: 1.5em;
+    }
+
+    /* For tablet */
+    @media screen and (min-width: 960px) {
+      font-size: 2.3em;
+    }
   }
 }
+
 
 /* navigation */
 @mixin active-link($width: 0) {
