@@ -1,5 +1,5 @@
 <template>
-  <a class="menu-button">
+  <a class="menu-button" @click="toggleTopNav()">
     <span></span>
     <span></span>
     <span></span>
@@ -7,7 +7,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    toggleTopNav () {
+      const header = document.querySelector('a.menu-button');
+      const menuButton = document.querySelector('header');
+
+      header.classList.toggle("active");
+      menuButton.classList.toggle("active");
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -45,6 +55,7 @@ export default {}
       bottom: 10px;
     }
   }
+
   &.active {
     span {
       &:first-child {
