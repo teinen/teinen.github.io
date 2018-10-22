@@ -17,23 +17,23 @@ export default {}
     display: none;
   }
 
-  display: block;
   cursor: pointer;
-  width: 40px;
+  display: block;
   height: 40px;
   position: fixed;
-  top: 15px;
   right: 15px;
+  top: 15px;
+  width: 40px;
   z-index: 3;
 
   span {
-    display: block;
-    width: 30px;
-    height: 3px;
     background: #ffffff;
-    position: absolute;
+    display: block;
+    height: 3px;
     left: 5px;
+    position: absolute;
     transition: all 0.2s;
+    width: 30px;
     &:first-child {
       top: 10px;
     }
