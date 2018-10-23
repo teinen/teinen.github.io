@@ -48,8 +48,7 @@ export default {
       top: 10px;
     }
     &:nth-child(2) {
-      margin-top: -1.5px;
-      top: 50%;
+      top: 18.5px;
     }
     &:last-child {
       bottom: 10px;
