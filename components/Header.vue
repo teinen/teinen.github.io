@@ -24,10 +24,10 @@ export default {
     return {
       title: 'teinen.github.io',
       headerContents: [
-        { title: 'ABOUT', url: '/'},
-        { title: 'SKILL', url: '/skill'},
+        { title: 'ABOUT',  url: '/'},
+        { title: 'SKILL',  url: '/skill'},
         { title: 'CAREER', url: '/career'},
-        { title: 'WORK', url: '/work'},
+        { title: 'WORK',   url: '/work'},
       ]
     }
   },

@@ -54,10 +54,10 @@ html {
 
 /* main container */
 .container {
-  max-width: 60vw;
+  max-width: 940px;
   margin: 0 auto;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 960px) {
     max-width: 100vw;
     margin: 0 20px;
   }
@@ -74,7 +74,20 @@ section {
   border-radius: 3px;
   box-shadow: 0 2px 5px #ccc;
   height: calc(100vh - 200px);
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #28385E;
+  font-size: 3.0em;
+  padding: 10px;
+
+  &::after {
+    border-bottom: 4px solid #28385E;
+    content: '';
+    display: block;
+    width: 100%;
+  }
 }
 </style>
