@@ -39,7 +39,7 @@ export default {
   span {
     background: #ffffff;
     display: block;
-    height: 3px;
+    height: 2px;
     left: 5px;
     position: absolute;
     transition: all 0.2s;
@@ -48,7 +48,7 @@ export default {
       top: 10px;
     }
     &:nth-child(2) {
-      top: 18.5px;
+      top: 19px;
     }
     &:last-child {
       bottom: 10px;

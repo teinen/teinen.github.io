@@ -56,12 +56,6 @@ header {
     justify-content: start;
   }
 
-  /* When open for tablet/mobile */
-  &.active {
-    border-bottom: 8px solid #516C8D;
-    height: 130px;
-  }
-
   .title {
     color: #ffffff;
     font-size: 1.8em;
